@@ -1,0 +1,15 @@
+{
+  "name": "rm-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "RM AI Workstation — attention & channel, product recommendation, activity and KYC modules.",
+  "scripts": {
+    "install:all": "npm --prefix src/frontend install",
+    "dev": "npm --prefix src/frontend run dev",
+    "build": "npm --prefix src/frontend run build",
+    "preview": "npm --prefix src/frontend run preview",
+    "api": "PYTHONPATH=src .venv/bin/python -m uvicorn api.main:app --reload --port 8000",
+    "fixtures": ".venv/bin/python tools/generate_fixtures.py",
+    "test:py": ".venv/bin/pytest -q"
+  }
+}

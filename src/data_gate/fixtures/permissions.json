@@ -1,0 +1,647 @@
+[
+  {
+    "client_id": "C1001",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1002",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1003",
+    "can_contact": true,
+    "marketing_consent": false,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1004",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1005",
+    "can_contact": true,
+    "marketing_consent": false,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1006",
+    "can_contact": true,
+    "marketing_consent": false,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1007",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1008",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1009",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1010",
+    "can_contact": true,
+    "marketing_consent": false,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1011",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1012",
+    "can_contact": true,
+    "marketing_consent": false,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1013",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1014",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1015",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1016",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1017",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1018",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "equity",
+      "deposit",
+      "bond"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1019",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1020",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1021",
+    "can_contact": true,
+    "marketing_consent": false,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1022",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "equity",
+      "deposit",
+      "bond"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1023",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1024",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1025",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1026",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1027",
+    "can_contact": true,
+    "marketing_consent": false,
+    "allowed_product_types": [
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1028",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1029",
+    "can_contact": true,
+    "marketing_consent": false,
+    "allowed_product_types": [
+      "equity",
+      "deposit",
+      "bond"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1030",
+    "can_contact": true,
+    "marketing_consent": false,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": "2026-07-25"
+  },
+  {
+    "client_id": "C1031",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1032",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1033",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1034",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1035",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1036",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1037",
+    "can_contact": true,
+    "marketing_consent": false,
+    "allowed_product_types": [
+      "equity",
+      "deposit",
+      "bond"
+    ],
+    "do_not_disturb_until": "2026-08-09"
+  },
+  {
+    "client_id": "C1038",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1039",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1040",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1041",
+    "can_contact": true,
+    "marketing_consent": false,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1042",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1043",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1044",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1045",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1046",
+    "can_contact": true,
+    "marketing_consent": false,
+    "allowed_product_types": [
+      "equity",
+      "deposit",
+      "bond"
+    ],
+    "do_not_disturb_until": "2026-08-17"
+  },
+  {
+    "client_id": "C1047",
+    "can_contact": true,
+    "marketing_consent": false,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  },
+  {
+    "client_id": "C1048",
+    "can_contact": true,
+    "marketing_consent": true,
+    "allowed_product_types": [
+      "mutual_fund",
+      "bond",
+      "structured_note",
+      "insurance",
+      "equity",
+      "deposit"
+    ],
+    "do_not_disturb_until": null
+  }
+]
