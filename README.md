@@ -174,3 +174,4 @@ Boundaries the adapter holds:
 - Scoring weights are a first draft, tuned to make the demo legible. They are not calibrated against outcomes.
 - Single RM (`RM001`). No auth, no multi-tenant, no audit log.
 - Products can tie on score when they are genuinely equivalent on the modelled dimensions.
+# FIN_AI_RM_Workstation
