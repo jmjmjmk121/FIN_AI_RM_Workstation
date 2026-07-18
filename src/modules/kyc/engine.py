@@ -13,6 +13,7 @@ from typing import Optional
 
 from data_gate.gate import DataGate, get_gate
 from data_gate.models import ClientView, KycStatus
+from modules.kyc.aml import score_aml
 
 # Renewal packs go out this far ahead of expiry.
 RENEWAL_LEAD_DAYS = 60
@@ -33,6 +34,7 @@ class KycRow:
     suitability_overdue: bool
     advice_blocked: bool
     action: str
+    aml: dict
 
     def to_dict(self) -> dict:
         def iso(d: Optional[date]) -> Optional[str]:
@@ -52,6 +54,7 @@ class KycRow:
             "suitability_overdue": self.suitability_overdue,
             "advice_blocked": self.advice_blocked,
             "action": self.action,
+            "aml": self.aml,
         }
 
 
@@ -88,6 +91,7 @@ def build_row(view: ClientView, as_of: date) -> KycRow:
             suitability_overdue=False,
             advice_blocked=True,
             action="Open a KYC file for this client",
+            aml=score_aml(view),
         )
 
     days = (kyc.expires_on - as_of).days if kyc.expires_on else None
@@ -108,6 +112,7 @@ def build_row(view: ClientView, as_of: date) -> KycRow:
         suitability_overdue=suit_overdue,
         advice_blocked=blocked,
         action=_action(kyc.kyc_status, days, kyc.missing_documents, suit_overdue),
+        aml=score_aml(view),
     )
 
 
@@ -149,6 +154,7 @@ def build_kyc_dashboard(
             "renewals_due_60d": len(renewals),
             "suitability_overdue": len([r for r in rows if r.suitability_overdue]),
             "high_aml_risk": len([r for r in rows if r.aml_risk_rating == "high"]),
+            "aml_screening_required": len([r for r in rows if r.aml["screening"]["requires_manual_screening"]]),
         },
         "rows": [r.to_dict() for r in rows],
     }
