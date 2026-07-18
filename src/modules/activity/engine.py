@@ -40,6 +40,9 @@ class ActivityRow:
     aum: float
     matured_value: float
     reengagement_reason: Optional[str]
+    investment_activity: str
+    relationship_activity: str
+    permitted_action: str
 
     def to_dict(self) -> dict:
         def iso(d: Optional[date]) -> Optional[str]:
@@ -65,6 +68,9 @@ class ActivityRow:
             "aum": self.aum,
             "matured_value": round(self.matured_value, 2),
             "reengagement_reason": self.reengagement_reason,
+            "investment_activity": self.investment_activity,
+            "relationship_activity": self.relationship_activity,
+            "permitted_action": self.permitted_action,
         }
 
 
@@ -78,6 +84,51 @@ def classify(months: Optional[float]) -> ActivityStatus:
     if months >= COOLING_AFTER_MONTHS:
         return ActivityStatus.COOLING
     return ActivityStatus.ACTIVE
+
+
+def _months_between(as_of: date, event_on: Optional[date]) -> Optional[float]:
+    return (as_of - event_on).days / DAYS_PER_MONTH if event_on else None
+
+
+def _investment_activity(client, as_of: date) -> str:
+    """Investment behaviour and relationship engagement are different axes.
+
+    A holding-only client is not labelled churn merely because there was no
+    recent trade. Full reactivation detection needs event history and therefore
+    remains deliberately absent until a bank CRM/transaction adapter exists.
+    """
+    trade_months = _months_between(as_of, client.last_trade_on)
+    cash_dates = [d for d in (client.last_deposit_on, client.last_withdrawal_on) if d]
+    cash_months = _months_between(as_of, max(cash_dates)) if cash_dates else None
+    if trade_months is not None and trade_months < COOLING_AFTER_MONTHS:
+        return "active_trading"
+    if cash_months is not None and cash_months < COOLING_AFTER_MONTHS:
+        return "active_cash_flow"
+    if client.holdings:
+        return "holding_only"
+    return "no_recent_investment_activity"
+
+
+def _relationship_activity(client, as_of: date) -> str:
+    contact_months = _months_between(as_of, client.last_contact_on)
+    if contact_months is None or contact_months >= 3:
+        return "contact_silent"
+    if contact_months >= 1:
+        return "contact_cooling"
+    return "recent_contact"
+
+
+def _permitted_action(view: ClientView, status: ActivityStatus, as_of: date) -> str:
+    permission = view.permission
+    if permission is None or not permission.can_contact:
+        return "DO_NOT_CONTACT"
+    if permission.do_not_disturb_until and permission.do_not_disturb_until >= as_of:
+        return "CHECK_CONTACT_LOCK"
+    if view.kyc is None or view.kyc.kyc_status.value in {"overdue", "missing"}:
+        return "CONFIRM_DATA"
+    if status in {ActivityStatus.DORMANT, ActivityStatus.INACTIVE}:
+        return "REVIEW_BEFORE_REENGAGE"
+    return "REVIEW_NEXT_NEED"
 
 
 def build_row(view: ClientView, as_of: date) -> ActivityRow:
@@ -103,15 +154,15 @@ def build_row(view: ClientView, as_of: date) -> ActivityRow:
         if h.maturity_date is not None and h.maturity_date <= as_of
     )
 
-    # Why it is worth calling now — the "early signal" the brief asks for.
+    # Why it may deserve review now. An alert is not permission to call or sell.
     reason = None
     if status != ActivityStatus.ACTIVE:
         if matured > 0:
-            reason = f"{matured:,.0f} THB matured and sitting uninvested"
+            reason = f"มีสินทรัพย์ครบกำหนด {matured:,.0f} บาท ควรตรวจความต้องการก่อนติดต่อ"
         elif client.investable_cash >= 1_000_000:
-            reason = f"{client.investable_cash:,.0f} THB idle above the liquidity reserve"
+            reason = f"มีเงินสดเหนือเงินสำรอง {client.investable_cash:,.0f} บาท ควรยืนยันเป้าหมายก่อนเสนอทางเลือก"
         elif status in (ActivityStatus.DORMANT, ActivityStatus.INACTIVE):
-            reason = f"No client-initiated activity for {months:.0f} months"
+            reason = f"ไม่มีกิจกรรมที่ลูกค้าเป็นผู้เริ่มประมาณ {months:.0f} เดือน"
 
     return ActivityRow(
         client_id=client.client_id,
@@ -129,6 +180,9 @@ def build_row(view: ClientView, as_of: date) -> ActivityRow:
         aum=client.aum,
         matured_value=matured,
         reengagement_reason=reason,
+        investment_activity=_investment_activity(client, as_of),
+        relationship_activity=_relationship_activity(client, as_of),
+        permitted_action=_permitted_action(view, status, as_of),
     )
 
 
@@ -148,6 +202,17 @@ def build_activity_dashboard(
     rows.sort(key=lambda r: (-(r.months_since_activity or 999), -r.idle_cash))
 
     by_status = {s.value: len([r for r in rows if r.status == s]) for s in ActivityStatus}
+    investment_states = {
+        key: len([r for r in rows if r.investment_activity == key])
+        for key in (
+            "active_trading", "active_cash_flow", "holding_only",
+            "no_recent_investment_activity",
+        )
+    }
+    relationship_states = {
+        key: len([r for r in rows if r.relationship_activity == key])
+        for key in ("recent_contact", "contact_cooling", "contact_silent")
+    }
     at_risk = [r for r in rows if r.status in (ActivityStatus.DORMANT, ActivityStatus.INACTIVE)]
 
     return {
@@ -155,6 +220,8 @@ def build_activity_dashboard(
         "summary": {
             "total": len(rows),
             "by_status": by_status,
+            "by_investment_activity": investment_states,
+            "by_relationship_activity": relationship_states,
             "at_risk": len(at_risk),
             "idle_cash_at_risk": round(sum(r.idle_cash for r in at_risk), 2),
             "matured_at_risk": round(sum(r.matured_value for r in at_risk), 2),

@@ -2,442 +2,2760 @@
   {
     "client_id": "C1001",
     "kyc_status": "valid",
-    "last_review_on": "2025-04-28",
-    "expires_on": "2027-04-28",
-    "aml_risk_rating": "medium",
+    "last_review_on": "2025-04-19",
+    "expires_on": "2027-04-19",
+    "aml_risk_rating": "high",
     "missing_documents": [],
-    "suitability_expires_on": "2028-03-01"
+    "suitability_expires_on": "2028-03-11"
   },
   {
     "client_id": "C1002",
-    "kyc_status": "valid",
-    "last_review_on": "2025-04-21",
-    "expires_on": "2027-04-21",
-    "aml_risk_rating": "medium",
-    "missing_documents": [],
-    "suitability_expires_on": "2028-02-04"
-  },
-  {
-    "client_id": "C1003",
-    "kyc_status": "valid",
-    "last_review_on": "2025-01-26",
-    "expires_on": "2027-01-26",
-    "aml_risk_rating": "high",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-08-09"
-  },
-  {
-    "client_id": "C1004",
     "kyc_status": "missing",
-    "last_review_on": "2026-08-31",
-    "expires_on": "2028-08-30",
+    "last_review_on": "2025-04-16",
+    "expires_on": "2027-04-16",
     "aml_risk_rating": "low",
     "missing_documents": [
       "Proof of address"
     ],
-    "suitability_expires_on": "2028-07-06"
+    "suitability_expires_on": "2026-09-02"
+  },
+  {
+    "client_id": "C1003",
+    "kyc_status": "valid",
+    "last_review_on": "2026-09-09",
+    "expires_on": "2028-09-08",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-07-22"
+  },
+  {
+    "client_id": "C1004",
+    "kyc_status": "missing",
+    "last_review_on": "2026-05-20",
+    "expires_on": "2028-05-19",
+    "aml_risk_rating": "medium",
+    "missing_documents": [
+      "Proof of address"
+    ],
+    "suitability_expires_on": "2028-07-23"
   },
   {
     "client_id": "C1005",
     "kyc_status": "valid",
-    "last_review_on": "2026-01-24",
-    "expires_on": "2028-01-24",
-    "aml_risk_rating": "low",
+    "last_review_on": "2025-06-20",
+    "expires_on": "2027-06-20",
+    "aml_risk_rating": "medium",
     "missing_documents": [],
-    "suitability_expires_on": "2026-10-21"
+    "suitability_expires_on": "2026-06-29"
   },
   {
     "client_id": "C1006",
     "kyc_status": "valid",
-    "last_review_on": "2024-08-14",
-    "expires_on": "2026-08-14",
-    "aml_risk_rating": "low",
+    "last_review_on": "2024-12-23",
+    "expires_on": "2026-12-23",
+    "aml_risk_rating": "medium",
     "missing_documents": [],
-    "suitability_expires_on": "2027-06-19"
+    "suitability_expires_on": "2027-01-17"
   },
   {
     "client_id": "C1007",
     "kyc_status": "valid",
-    "last_review_on": "2026-07-18",
-    "expires_on": "2028-07-17",
+    "last_review_on": "2025-03-07",
+    "expires_on": "2027-03-07",
     "aml_risk_rating": "low",
     "missing_documents": [],
-    "suitability_expires_on": "2027-06-26"
+    "suitability_expires_on": "2028-09-16"
   },
   {
     "client_id": "C1008",
     "kyc_status": "valid",
-    "last_review_on": "2025-09-09",
-    "expires_on": "2027-09-09",
+    "last_review_on": "2024-07-26",
+    "expires_on": "2026-07-26",
     "aml_risk_rating": "medium",
     "missing_documents": [],
-    "suitability_expires_on": "2027-12-05"
+    "suitability_expires_on": "2027-08-30"
   },
   {
     "client_id": "C1009",
     "kyc_status": "valid",
-    "last_review_on": "2024-05-19",
-    "expires_on": "2026-05-19",
+    "last_review_on": "2025-12-28",
+    "expires_on": "2027-12-28",
     "aml_risk_rating": "medium",
     "missing_documents": [],
-    "suitability_expires_on": "2026-11-27"
+    "suitability_expires_on": "2026-12-08"
   },
   {
     "client_id": "C1010",
     "kyc_status": "valid",
-    "last_review_on": "2024-07-31",
-    "expires_on": "2026-07-31",
+    "last_review_on": "2024-07-28",
+    "expires_on": "2026-07-28",
     "aml_risk_rating": "low",
     "missing_documents": [],
-    "suitability_expires_on": "2026-08-11"
+    "suitability_expires_on": "2027-01-21"
   },
   {
     "client_id": "C1011",
     "kyc_status": "valid",
-    "last_review_on": "2026-06-24",
-    "expires_on": "2028-06-23",
-    "aml_risk_rating": "low",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-10-19"
-  },
-  {
-    "client_id": "C1012",
-    "kyc_status": "valid",
-    "last_review_on": "2025-11-26",
-    "expires_on": "2027-11-26",
-    "aml_risk_rating": "low",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-08-29"
-  },
-  {
-    "client_id": "C1013",
-    "kyc_status": "valid",
-    "last_review_on": "2025-07-28",
-    "expires_on": "2027-07-28",
-    "aml_risk_rating": "low",
-    "missing_documents": [],
-    "suitability_expires_on": "2028-02-20"
-  },
-  {
-    "client_id": "C1014",
-    "kyc_status": "valid",
-    "last_review_on": "2025-05-06",
-    "expires_on": "2027-05-06",
-    "aml_risk_rating": "medium",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-08-23"
-  },
-  {
-    "client_id": "C1015",
-    "kyc_status": "valid",
-    "last_review_on": "2026-03-12",
-    "expires_on": "2028-03-11",
-    "aml_risk_rating": "medium",
-    "missing_documents": [],
-    "suitability_expires_on": "2027-07-24"
-  },
-  {
-    "client_id": "C1016",
-    "kyc_status": "missing",
-    "last_review_on": "2026-11-22",
-    "expires_on": "2028-11-21",
-    "aml_risk_rating": "high",
-    "missing_documents": [
-      "Source of wealth declaration",
-      "Updated ID copy"
-    ],
-    "suitability_expires_on": "2027-07-19"
-  },
-  {
-    "client_id": "C1017",
-    "kyc_status": "valid",
-    "last_review_on": "2026-06-14",
-    "expires_on": "2028-06-13",
-    "aml_risk_rating": "medium",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-09-26"
-  },
-  {
-    "client_id": "C1018",
-    "kyc_status": "valid",
-    "last_review_on": "2024-07-06",
-    "expires_on": "2026-07-06",
-    "aml_risk_rating": "medium",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-10-21"
-  },
-  {
-    "client_id": "C1019",
-    "kyc_status": "valid",
-    "last_review_on": "2024-07-23",
-    "expires_on": "2026-07-23",
-    "aml_risk_rating": "medium",
-    "missing_documents": [],
-    "suitability_expires_on": "2028-02-02"
-  },
-  {
-    "client_id": "C1020",
-    "kyc_status": "valid",
-    "last_review_on": "2026-08-19",
-    "expires_on": "2028-08-18",
-    "aml_risk_rating": "medium",
-    "missing_documents": [],
-    "suitability_expires_on": "2027-12-09"
-  },
-  {
-    "client_id": "C1021",
-    "kyc_status": "valid",
-    "last_review_on": "2026-10-02",
-    "expires_on": "2028-10-01",
-    "aml_risk_rating": "medium",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-11-18"
-  },
-  {
-    "client_id": "C1022",
-    "kyc_status": "valid",
-    "last_review_on": "2026-08-26",
-    "expires_on": "2028-08-25",
-    "aml_risk_rating": "medium",
-    "missing_documents": [],
-    "suitability_expires_on": "2028-08-08"
-  },
-  {
-    "client_id": "C1023",
-    "kyc_status": "valid",
-    "last_review_on": "2024-09-12",
-    "expires_on": "2026-09-12",
-    "aml_risk_rating": "low",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-09-10"
-  },
-  {
-    "client_id": "C1024",
-    "kyc_status": "valid",
-    "last_review_on": "2024-02-09",
-    "expires_on": "2026-02-08",
-    "aml_risk_rating": "low",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-12-24"
-  },
-  {
-    "client_id": "C1025",
-    "kyc_status": "valid",
-    "last_review_on": "2026-07-11",
-    "expires_on": "2028-07-10",
-    "aml_risk_rating": "low",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-12-31"
-  },
-  {
-    "client_id": "C1026",
-    "kyc_status": "valid",
-    "last_review_on": "2026-12-29",
-    "expires_on": "2028-12-28",
-    "aml_risk_rating": "medium",
-    "missing_documents": [],
-    "suitability_expires_on": "2027-01-18"
-  },
-  {
-    "client_id": "C1027",
-    "kyc_status": "valid",
-    "last_review_on": "2026-03-20",
-    "expires_on": "2028-03-19",
-    "aml_risk_rating": "low",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-11-13"
-  },
-  {
-    "client_id": "C1028",
-    "kyc_status": "valid",
-    "last_review_on": "2025-08-21",
-    "expires_on": "2027-08-21",
-    "aml_risk_rating": "low",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-06-16"
-  },
-  {
-    "client_id": "C1029",
-    "kyc_status": "valid",
-    "last_review_on": "2025-09-01",
-    "expires_on": "2027-09-01",
-    "aml_risk_rating": "medium",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-12-20"
-  },
-  {
-    "client_id": "C1030",
-    "kyc_status": "valid",
-    "last_review_on": "2025-03-02",
-    "expires_on": "2027-03-02",
-    "aml_risk_rating": "high",
-    "missing_documents": [],
-    "suitability_expires_on": "2026-12-05"
-  },
-  {
-    "client_id": "C1031",
-    "kyc_status": "valid",
-    "last_review_on": "2025-08-14",
-    "expires_on": "2027-08-14",
-    "aml_risk_rating": "high",
-    "missing_documents": [],
-    "suitability_expires_on": "2027-02-17"
-  },
-  {
-    "client_id": "C1032",
-    "kyc_status": "valid",
-    "last_review_on": "2024-09-08",
-    "expires_on": "2026-09-08",
-    "aml_risk_rating": "medium",
-    "missing_documents": [],
-    "suitability_expires_on": "2027-10-13"
-  },
-  {
-    "client_id": "C1033",
-    "kyc_status": "valid",
-    "last_review_on": "2024-07-20",
-    "expires_on": "2026-07-20",
-    "aml_risk_rating": "low",
-    "missing_documents": [],
-    "suitability_expires_on": "2028-04-27"
-  },
-  {
-    "client_id": "C1034",
-    "kyc_status": "valid",
-    "last_review_on": "2026-10-08",
-    "expires_on": "2028-10-07",
+    "last_review_on": "2024-01-14",
+    "expires_on": "2026-01-13",
     "aml_risk_rating": "medium",
     "missing_documents": [],
     "suitability_expires_on": "2027-12-31"
   },
   {
-    "client_id": "C1035",
+    "client_id": "C1012",
     "kyc_status": "valid",
-    "last_review_on": "2024-05-07",
-    "expires_on": "2026-05-07",
+    "last_review_on": "2025-02-06",
+    "expires_on": "2027-02-06",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-09-17"
+  },
+  {
+    "client_id": "C1013",
+    "kyc_status": "valid",
+    "last_review_on": "2026-08-30",
+    "expires_on": "2028-08-29",
     "aml_risk_rating": "medium",
     "missing_documents": [],
-    "suitability_expires_on": "2026-09-02"
+    "suitability_expires_on": "2027-08-11"
+  },
+  {
+    "client_id": "C1014",
+    "kyc_status": "valid",
+    "last_review_on": "2026-09-19",
+    "expires_on": "2028-09-18",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-01-13"
+  },
+  {
+    "client_id": "C1015",
+    "kyc_status": "valid",
+    "last_review_on": "2026-07-23",
+    "expires_on": "2028-07-22",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-23"
+  },
+  {
+    "client_id": "C1016",
+    "kyc_status": "valid",
+    "last_review_on": "2026-04-10",
+    "expires_on": "2028-04-09",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-09-09"
+  },
+  {
+    "client_id": "C1017",
+    "kyc_status": "valid",
+    "last_review_on": "2025-07-25",
+    "expires_on": "2027-07-25",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-09-06"
+  },
+  {
+    "client_id": "C1018",
+    "kyc_status": "valid",
+    "last_review_on": "2026-05-06",
+    "expires_on": "2028-05-05",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-05-12"
+  },
+  {
+    "client_id": "C1019",
+    "kyc_status": "missing",
+    "last_review_on": "2024-01-22",
+    "expires_on": "2026-01-21",
+    "aml_risk_rating": "low",
+    "missing_documents": [
+      "Updated ID copy",
+      "Proof of address"
+    ],
+    "suitability_expires_on": "2027-03-20"
+  },
+  {
+    "client_id": "C1020",
+    "kyc_status": "valid",
+    "last_review_on": "2026-11-17",
+    "expires_on": "2028-11-16",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-05-07"
+  },
+  {
+    "client_id": "C1021",
+    "kyc_status": "valid",
+    "last_review_on": "2026-07-22",
+    "expires_on": "2028-07-21",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-06-30"
+  },
+  {
+    "client_id": "C1022",
+    "kyc_status": "valid",
+    "last_review_on": "2025-07-11",
+    "expires_on": "2027-07-11",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-06-07"
+  },
+  {
+    "client_id": "C1023",
+    "kyc_status": "missing",
+    "last_review_on": "2025-01-28",
+    "expires_on": "2027-01-28",
+    "aml_risk_rating": "medium",
+    "missing_documents": [
+      "Proof of address",
+      "Updated ID copy"
+    ],
+    "suitability_expires_on": "2026-10-12"
+  },
+  {
+    "client_id": "C1024",
+    "kyc_status": "valid",
+    "last_review_on": "2025-05-19",
+    "expires_on": "2027-05-19",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-02-27"
+  },
+  {
+    "client_id": "C1025",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-07",
+    "expires_on": "2026-08-07",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-09-21"
+  },
+  {
+    "client_id": "C1026",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-30",
+    "expires_on": "2026-08-30",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-08-17"
+  },
+  {
+    "client_id": "C1027",
+    "kyc_status": "valid",
+    "last_review_on": "2024-11-05",
+    "expires_on": "2026-11-05",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-07"
+  },
+  {
+    "client_id": "C1028",
+    "kyc_status": "valid",
+    "last_review_on": "2026-03-08",
+    "expires_on": "2028-03-07",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-11-30"
+  },
+  {
+    "client_id": "C1029",
+    "kyc_status": "missing",
+    "last_review_on": "2024-01-21",
+    "expires_on": "2026-01-20",
+    "aml_risk_rating": "high",
+    "missing_documents": [
+      "Tax residency self-certification"
+    ],
+    "suitability_expires_on": "2028-08-30"
+  },
+  {
+    "client_id": "C1030",
+    "kyc_status": "valid",
+    "last_review_on": "2024-05-03",
+    "expires_on": "2026-05-03",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-06-10"
+  },
+  {
+    "client_id": "C1031",
+    "kyc_status": "valid",
+    "last_review_on": "2025-02-21",
+    "expires_on": "2027-02-21",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-07-08"
+  },
+  {
+    "client_id": "C1032",
+    "kyc_status": "valid",
+    "last_review_on": "2025-10-02",
+    "expires_on": "2027-10-02",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-09-06"
+  },
+  {
+    "client_id": "C1033",
+    "kyc_status": "valid",
+    "last_review_on": "2026-05-24",
+    "expires_on": "2028-05-23",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-10-13"
+  },
+  {
+    "client_id": "C1034",
+    "kyc_status": "valid",
+    "last_review_on": "2025-12-04",
+    "expires_on": "2027-12-04",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-03-31"
+  },
+  {
+    "client_id": "C1035",
+    "kyc_status": "valid",
+    "last_review_on": "2026-02-15",
+    "expires_on": "2028-02-15",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-20"
   },
   {
     "client_id": "C1036",
-    "kyc_status": "missing",
-    "last_review_on": "2024-12-03",
-    "expires_on": "2026-12-03",
-    "aml_risk_rating": "medium",
-    "missing_documents": [
-      "Proof of address"
-    ],
-    "suitability_expires_on": "2028-05-05"
+    "kyc_status": "valid",
+    "last_review_on": "2026-04-06",
+    "expires_on": "2028-04-05",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-08"
   },
   {
     "client_id": "C1037",
+    "kyc_status": "missing",
+    "last_review_on": "2026-06-09",
+    "expires_on": "2028-06-08",
+    "aml_risk_rating": "high",
+    "missing_documents": [
+      "Source of wealth declaration",
+      "Tax residency self-certification"
+    ],
+    "suitability_expires_on": "2027-11-05"
+  },
+  {
+    "client_id": "C1038",
+    "kyc_status": "valid",
+    "last_review_on": "2025-03-01",
+    "expires_on": "2027-03-01",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-12"
+  },
+  {
+    "client_id": "C1039",
+    "kyc_status": "missing",
+    "last_review_on": "2025-06-18",
+    "expires_on": "2027-06-18",
+    "aml_risk_rating": "medium",
+    "missing_documents": [
+      "Tax residency self-certification",
+      "Source of wealth declaration"
+    ],
+    "suitability_expires_on": "2027-04-03"
+  },
+  {
+    "client_id": "C1040",
+    "kyc_status": "valid",
+    "last_review_on": "2026-06-18",
+    "expires_on": "2028-06-17",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-12-23"
+  },
+  {
+    "client_id": "C1041",
+    "kyc_status": "valid",
+    "last_review_on": "2026-12-04",
+    "expires_on": "2028-12-03",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-06-24"
+  },
+  {
+    "client_id": "C1042",
+    "kyc_status": "valid",
+    "last_review_on": "2024-11-08",
+    "expires_on": "2026-11-08",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-30"
+  },
+  {
+    "client_id": "C1043",
+    "kyc_status": "valid",
+    "last_review_on": "2025-06-29",
+    "expires_on": "2027-06-29",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-11-30"
+  },
+  {
+    "client_id": "C1044",
+    "kyc_status": "valid",
+    "last_review_on": "2026-12-25",
+    "expires_on": "2028-12-24",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-08-04"
+  },
+  {
+    "client_id": "C1045",
+    "kyc_status": "valid",
+    "last_review_on": "2026-01-25",
+    "expires_on": "2028-01-25",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-02-02"
+  },
+  {
+    "client_id": "C1046",
+    "kyc_status": "valid",
+    "last_review_on": "2026-10-25",
+    "expires_on": "2028-10-24",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-08-05"
+  },
+  {
+    "client_id": "C1047",
+    "kyc_status": "valid",
+    "last_review_on": "2025-10-07",
+    "expires_on": "2027-10-07",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-10-27"
+  },
+  {
+    "client_id": "C1048",
+    "kyc_status": "valid",
+    "last_review_on": "2024-05-25",
+    "expires_on": "2026-05-25",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-05-02"
+  },
+  {
+    "client_id": "C1049",
+    "kyc_status": "valid",
+    "last_review_on": "2025-01-24",
+    "expires_on": "2027-01-24",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-10-24"
+  },
+  {
+    "client_id": "C1050",
+    "kyc_status": "valid",
+    "last_review_on": "2024-09-15",
+    "expires_on": "2026-09-15",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-05-17"
+  },
+  {
+    "client_id": "C1051",
+    "kyc_status": "valid",
+    "last_review_on": "2026-02-13",
+    "expires_on": "2028-02-13",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-04-19"
+  },
+  {
+    "client_id": "C1052",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-25",
+    "expires_on": "2026-08-25",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-07-01"
+  },
+  {
+    "client_id": "C1053",
+    "kyc_status": "valid",
+    "last_review_on": "2026-04-13",
+    "expires_on": "2028-04-12",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-05-08"
+  },
+  {
+    "client_id": "C1054",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-24",
+    "expires_on": "2026-08-24",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-27"
+  },
+  {
+    "client_id": "C1055",
+    "kyc_status": "valid",
+    "last_review_on": "2026-06-23",
+    "expires_on": "2028-06-22",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-02-08"
+  },
+  {
+    "client_id": "C1056",
+    "kyc_status": "valid",
+    "last_review_on": "2025-09-16",
+    "expires_on": "2027-09-16",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-04-15"
+  },
+  {
+    "client_id": "C1057",
+    "kyc_status": "valid",
+    "last_review_on": "2026-08-11",
+    "expires_on": "2028-08-10",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-09-24"
+  },
+  {
+    "client_id": "C1058",
+    "kyc_status": "valid",
+    "last_review_on": "2025-07-11",
+    "expires_on": "2027-07-11",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-05-03"
+  },
+  {
+    "client_id": "C1059",
+    "kyc_status": "valid",
+    "last_review_on": "2025-02-10",
+    "expires_on": "2027-02-10",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-03-06"
+  },
+  {
+    "client_id": "C1060",
+    "kyc_status": "valid",
+    "last_review_on": "2026-07-20",
+    "expires_on": "2028-07-19",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-02-08"
+  },
+  {
+    "client_id": "C1061",
+    "kyc_status": "valid",
+    "last_review_on": "2024-11-22",
+    "expires_on": "2026-11-22",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-05-05"
+  },
+  {
+    "client_id": "C1062",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-23",
+    "expires_on": "2026-08-23",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-07-23"
+  },
+  {
+    "client_id": "C1063",
+    "kyc_status": "valid",
+    "last_review_on": "2025-01-25",
+    "expires_on": "2027-01-25",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-04-24"
+  },
+  {
+    "client_id": "C1064",
+    "kyc_status": "valid",
+    "last_review_on": "2024-09-02",
+    "expires_on": "2026-09-02",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-10-18"
+  },
+  {
+    "client_id": "C1065",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-09",
+    "expires_on": "2026-08-09",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-06-02"
+  },
+  {
+    "client_id": "C1066",
+    "kyc_status": "valid",
+    "last_review_on": "2024-11-25",
+    "expires_on": "2026-11-25",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-06-01"
+  },
+  {
+    "client_id": "C1067",
+    "kyc_status": "valid",
+    "last_review_on": "2024-02-23",
+    "expires_on": "2026-02-22",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-12"
+  },
+  {
+    "client_id": "C1068",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-09",
+    "expires_on": "2026-08-09",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-03-31"
+  },
+  {
+    "client_id": "C1069",
+    "kyc_status": "missing",
+    "last_review_on": "2025-07-24",
+    "expires_on": "2027-07-24",
+    "aml_risk_rating": "medium",
+    "missing_documents": [
+      "Updated ID copy"
+    ],
+    "suitability_expires_on": "2027-09-18"
+  },
+  {
+    "client_id": "C1070",
+    "kyc_status": "valid",
+    "last_review_on": "2024-06-28",
+    "expires_on": "2026-06-28",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-04-15"
+  },
+  {
+    "client_id": "C1071",
+    "kyc_status": "valid",
+    "last_review_on": "2026-03-21",
+    "expires_on": "2028-03-20",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-10-27"
+  },
+  {
+    "client_id": "C1072",
+    "kyc_status": "valid",
+    "last_review_on": "2025-12-18",
+    "expires_on": "2027-12-18",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-06-18"
+  },
+  {
+    "client_id": "C1073",
+    "kyc_status": "valid",
+    "last_review_on": "2025-12-25",
+    "expires_on": "2027-12-25",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-11-10"
+  },
+  {
+    "client_id": "C1074",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-30",
+    "expires_on": "2026-08-30",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-04-05"
+  },
+  {
+    "client_id": "C1075",
+    "kyc_status": "valid",
+    "last_review_on": "2026-08-22",
+    "expires_on": "2028-08-21",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-07-22"
+  },
+  {
+    "client_id": "C1076",
+    "kyc_status": "valid",
+    "last_review_on": "2026-03-02",
+    "expires_on": "2028-03-01",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-10"
+  },
+  {
+    "client_id": "C1077",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-31",
+    "expires_on": "2026-08-31",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-07-10"
+  },
+  {
+    "client_id": "C1078",
+    "kyc_status": "missing",
+    "last_review_on": "2026-01-25",
+    "expires_on": "2028-01-25",
+    "aml_risk_rating": "medium",
+    "missing_documents": [
+      "Tax residency self-certification"
+    ],
+    "suitability_expires_on": "2027-10-13"
+  },
+  {
+    "client_id": "C1079",
+    "kyc_status": "valid",
+    "last_review_on": "2024-06-16",
+    "expires_on": "2026-06-16",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-09-02"
+  },
+  {
+    "client_id": "C1080",
+    "kyc_status": "valid",
+    "last_review_on": "2025-07-11",
+    "expires_on": "2027-07-11",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-08-14"
+  },
+  {
+    "client_id": "C1081",
+    "kyc_status": "valid",
+    "last_review_on": "2026-02-16",
+    "expires_on": "2028-02-16",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-07-13"
+  },
+  {
+    "client_id": "C1082",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-03",
+    "expires_on": "2026-08-03",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-02-26"
+  },
+  {
+    "client_id": "C1083",
+    "kyc_status": "valid",
+    "last_review_on": "2024-07-07",
+    "expires_on": "2026-07-07",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-05-28"
+  },
+  {
+    "client_id": "C1084",
+    "kyc_status": "valid",
+    "last_review_on": "2026-12-30",
+    "expires_on": "2028-12-29",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-07-03"
+  },
+  {
+    "client_id": "C1085",
+    "kyc_status": "valid",
+    "last_review_on": "2024-07-30",
+    "expires_on": "2026-07-30",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-02-21"
+  },
+  {
+    "client_id": "C1086",
+    "kyc_status": "valid",
+    "last_review_on": "2026-01-13",
+    "expires_on": "2028-01-13",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-08-29"
+  },
+  {
+    "client_id": "C1087",
+    "kyc_status": "valid",
+    "last_review_on": "2026-03-25",
+    "expires_on": "2028-03-24",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-06-29"
+  },
+  {
+    "client_id": "C1088",
+    "kyc_status": "valid",
+    "last_review_on": "2025-08-06",
+    "expires_on": "2027-08-06",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-09-29"
+  },
+  {
+    "client_id": "C1089",
+    "kyc_status": "valid",
+    "last_review_on": "2026-04-17",
+    "expires_on": "2028-04-16",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-04-09"
+  },
+  {
+    "client_id": "C1090",
+    "kyc_status": "valid",
+    "last_review_on": "2026-09-22",
+    "expires_on": "2028-09-21",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-08-31"
+  },
+  {
+    "client_id": "C1091",
+    "kyc_status": "valid",
+    "last_review_on": "2026-12-20",
+    "expires_on": "2028-12-19",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-04"
+  },
+  {
+    "client_id": "C1092",
+    "kyc_status": "valid",
+    "last_review_on": "2024-09-04",
+    "expires_on": "2026-09-04",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-08-24"
+  },
+  {
+    "client_id": "C1093",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-23",
+    "expires_on": "2026-08-23",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-08-11"
+  },
+  {
+    "client_id": "C1094",
+    "kyc_status": "valid",
+    "last_review_on": "2025-10-07",
+    "expires_on": "2027-10-07",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-07-31"
+  },
+  {
+    "client_id": "C1095",
+    "kyc_status": "missing",
+    "last_review_on": "2024-05-08",
+    "expires_on": "2026-05-08",
+    "aml_risk_rating": "low",
+    "missing_documents": [
+      "Source of wealth declaration"
+    ],
+    "suitability_expires_on": "2028-08-06"
+  },
+  {
+    "client_id": "C1096",
+    "kyc_status": "valid",
+    "last_review_on": "2026-08-23",
+    "expires_on": "2028-08-22",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-10-15"
+  },
+  {
+    "client_id": "C1097",
+    "kyc_status": "valid",
+    "last_review_on": "2026-08-21",
+    "expires_on": "2028-08-20",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-06-26"
+  },
+  {
+    "client_id": "C1098",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-31",
+    "expires_on": "2026-08-31",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-05-03"
+  },
+  {
+    "client_id": "C1099",
+    "kyc_status": "valid",
+    "last_review_on": "2025-09-27",
+    "expires_on": "2027-09-27",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-08-08"
+  },
+  {
+    "client_id": "C1100",
+    "kyc_status": "valid",
+    "last_review_on": "2024-05-30",
+    "expires_on": "2026-05-30",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-04-13"
+  },
+  {
+    "client_id": "C1101",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-09",
+    "expires_on": "2026-08-09",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-07-04"
+  },
+  {
+    "client_id": "C1102",
+    "kyc_status": "missing",
+    "last_review_on": "2025-06-27",
+    "expires_on": "2027-06-27",
+    "aml_risk_rating": "medium",
+    "missing_documents": [
+      "Proof of address",
+      "Source of wealth declaration"
+    ],
+    "suitability_expires_on": "2028-03-19"
+  },
+  {
+    "client_id": "C1103",
+    "kyc_status": "valid",
+    "last_review_on": "2025-05-07",
+    "expires_on": "2027-05-07",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-06-04"
+  },
+  {
+    "client_id": "C1104",
+    "kyc_status": "valid",
+    "last_review_on": "2026-06-02",
+    "expires_on": "2028-06-01",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-01-23"
+  },
+  {
+    "client_id": "C1105",
+    "kyc_status": "valid",
+    "last_review_on": "2024-09-07",
+    "expires_on": "2026-09-07",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-07-23"
+  },
+  {
+    "client_id": "C1106",
+    "kyc_status": "valid",
+    "last_review_on": "2025-11-08",
+    "expires_on": "2027-11-08",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-11-03"
+  },
+  {
+    "client_id": "C1107",
+    "kyc_status": "valid",
+    "last_review_on": "2025-07-22",
+    "expires_on": "2027-07-22",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-09-02"
+  },
+  {
+    "client_id": "C1108",
+    "kyc_status": "valid",
+    "last_review_on": "2024-07-28",
+    "expires_on": "2026-07-28",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-06-30"
+  },
+  {
+    "client_id": "C1109",
+    "kyc_status": "valid",
+    "last_review_on": "2026-08-10",
+    "expires_on": "2028-08-09",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-04-20"
+  },
+  {
+    "client_id": "C1110",
+    "kyc_status": "valid",
+    "last_review_on": "2025-01-20",
+    "expires_on": "2027-01-20",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-08-03"
+  },
+  {
+    "client_id": "C1111",
+    "kyc_status": "valid",
+    "last_review_on": "2025-12-27",
+    "expires_on": "2027-12-27",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-08-12"
+  },
+  {
+    "client_id": "C1112",
+    "kyc_status": "missing",
+    "last_review_on": "2024-09-01",
+    "expires_on": "2026-09-01",
+    "aml_risk_rating": "high",
+    "missing_documents": [
+      "Tax residency self-certification"
+    ],
+    "suitability_expires_on": "2027-08-17"
+  },
+  {
+    "client_id": "C1113",
+    "kyc_status": "valid",
+    "last_review_on": "2025-12-11",
+    "expires_on": "2027-12-11",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-04-21"
+  },
+  {
+    "client_id": "C1114",
+    "kyc_status": "valid",
+    "last_review_on": "2025-06-10",
+    "expires_on": "2027-06-10",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-04-17"
+  },
+  {
+    "client_id": "C1115",
+    "kyc_status": "valid",
+    "last_review_on": "2026-06-26",
+    "expires_on": "2028-06-25",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-03-31"
+  },
+  {
+    "client_id": "C1116",
+    "kyc_status": "valid",
+    "last_review_on": "2026-05-07",
+    "expires_on": "2028-05-06",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-04-13"
+  },
+  {
+    "client_id": "C1117",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-31",
+    "expires_on": "2026-08-31",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-02-07"
+  },
+  {
+    "client_id": "C1118",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-16",
+    "expires_on": "2026-08-16",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-06-16"
+  },
+  {
+    "client_id": "C1119",
+    "kyc_status": "valid",
+    "last_review_on": "2024-01-24",
+    "expires_on": "2026-01-23",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-09-16"
+  },
+  {
+    "client_id": "C1120",
+    "kyc_status": "valid",
+    "last_review_on": "2025-10-05",
+    "expires_on": "2027-10-05",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-03-30"
+  },
+  {
+    "client_id": "C1121",
+    "kyc_status": "valid",
+    "last_review_on": "2025-04-16",
+    "expires_on": "2027-04-16",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-01-17"
+  },
+  {
+    "client_id": "C1122",
+    "kyc_status": "valid",
+    "last_review_on": "2024-06-21",
+    "expires_on": "2026-06-21",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-05-21"
+  },
+  {
+    "client_id": "C1123",
+    "kyc_status": "valid",
+    "last_review_on": "2025-02-24",
+    "expires_on": "2027-02-24",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-06-28"
+  },
+  {
+    "client_id": "C1124",
+    "kyc_status": "valid",
+    "last_review_on": "2026-10-18",
+    "expires_on": "2028-10-17",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-02-27"
+  },
+  {
+    "client_id": "C1125",
+    "kyc_status": "valid",
+    "last_review_on": "2025-06-29",
+    "expires_on": "2027-06-29",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-03-18"
+  },
+  {
+    "client_id": "C1126",
+    "kyc_status": "valid",
+    "last_review_on": "2024-04-18",
+    "expires_on": "2026-04-18",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-06-24"
+  },
+  {
+    "client_id": "C1127",
+    "kyc_status": "valid",
+    "last_review_on": "2025-05-10",
+    "expires_on": "2027-05-10",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-05-25"
+  },
+  {
+    "client_id": "C1128",
+    "kyc_status": "valid",
+    "last_review_on": "2024-03-17",
+    "expires_on": "2026-03-17",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-09-07"
+  },
+  {
+    "client_id": "C1129",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-22",
+    "expires_on": "2026-08-22",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-20"
+  },
+  {
+    "client_id": "C1130",
+    "kyc_status": "valid",
+    "last_review_on": "2026-07-17",
+    "expires_on": "2028-07-16",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-01-18"
+  },
+  {
+    "client_id": "C1131",
+    "kyc_status": "valid",
+    "last_review_on": "2025-10-04",
+    "expires_on": "2027-10-04",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-08-03"
+  },
+  {
+    "client_id": "C1132",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-20",
+    "expires_on": "2026-08-20",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-01-17"
+  },
+  {
+    "client_id": "C1133",
+    "kyc_status": "missing",
+    "last_review_on": "2025-08-23",
+    "expires_on": "2027-08-23",
+    "aml_risk_rating": "low",
+    "missing_documents": [
+      "Tax residency self-certification",
+      "Proof of address"
+    ],
+    "suitability_expires_on": "2028-03-20"
+  },
+  {
+    "client_id": "C1134",
+    "kyc_status": "valid",
+    "last_review_on": "2026-08-14",
+    "expires_on": "2028-08-13",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-10-02"
+  },
+  {
+    "client_id": "C1135",
+    "kyc_status": "valid",
+    "last_review_on": "2024-09-15",
+    "expires_on": "2026-09-15",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-10-24"
+  },
+  {
+    "client_id": "C1136",
+    "kyc_status": "valid",
+    "last_review_on": "2026-11-05",
+    "expires_on": "2028-11-04",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-11-06"
+  },
+  {
+    "client_id": "C1137",
+    "kyc_status": "valid",
+    "last_review_on": "2025-08-24",
+    "expires_on": "2027-08-24",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-04-21"
+  },
+  {
+    "client_id": "C1138",
+    "kyc_status": "valid",
+    "last_review_on": "2026-10-20",
+    "expires_on": "2028-10-19",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-10-11"
+  },
+  {
+    "client_id": "C1139",
+    "kyc_status": "valid",
+    "last_review_on": "2026-08-12",
+    "expires_on": "2028-08-11",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-09-19"
+  },
+  {
+    "client_id": "C1140",
+    "kyc_status": "valid",
+    "last_review_on": "2025-03-22",
+    "expires_on": "2027-03-22",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-07-25"
+  },
+  {
+    "client_id": "C1141",
+    "kyc_status": "valid",
+    "last_review_on": "2025-08-29",
+    "expires_on": "2027-08-29",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-05-07"
+  },
+  {
+    "client_id": "C1142",
+    "kyc_status": "valid",
+    "last_review_on": "2025-03-17",
+    "expires_on": "2027-03-17",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-08-09"
+  },
+  {
+    "client_id": "C1143",
+    "kyc_status": "valid",
+    "last_review_on": "2026-08-13",
+    "expires_on": "2028-08-12",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-11"
+  },
+  {
+    "client_id": "C1144",
+    "kyc_status": "valid",
+    "last_review_on": "2025-12-11",
+    "expires_on": "2027-12-11",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-06-09"
+  },
+  {
+    "client_id": "C1145",
+    "kyc_status": "valid",
+    "last_review_on": "2025-03-08",
+    "expires_on": "2027-03-08",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-09-29"
+  },
+  {
+    "client_id": "C1146",
+    "kyc_status": "valid",
+    "last_review_on": "2025-05-28",
+    "expires_on": "2027-05-28",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-05-21"
+  },
+  {
+    "client_id": "C1147",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-30",
+    "expires_on": "2026-08-30",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-04-09"
+  },
+  {
+    "client_id": "C1148",
+    "kyc_status": "valid",
+    "last_review_on": "2024-12-17",
+    "expires_on": "2026-12-17",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-10-20"
+  },
+  {
+    "client_id": "C1149",
+    "kyc_status": "valid",
+    "last_review_on": "2024-11-11",
+    "expires_on": "2026-11-11",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-07-04"
+  },
+  {
+    "client_id": "C1150",
+    "kyc_status": "valid",
+    "last_review_on": "2024-03-01",
+    "expires_on": "2026-03-01",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-04"
+  },
+  {
+    "client_id": "C1151",
+    "kyc_status": "missing",
+    "last_review_on": "2026-05-29",
+    "expires_on": "2028-05-28",
+    "aml_risk_rating": "low",
+    "missing_documents": [
+      "Source of wealth declaration"
+    ],
+    "suitability_expires_on": "2028-04-05"
+  },
+  {
+    "client_id": "C1152",
+    "kyc_status": "valid",
+    "last_review_on": "2024-04-13",
+    "expires_on": "2026-04-13",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-06-07"
+  },
+  {
+    "client_id": "C1153",
+    "kyc_status": "valid",
+    "last_review_on": "2026-12-23",
+    "expires_on": "2028-12-22",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-06-29"
+  },
+  {
+    "client_id": "C1154",
+    "kyc_status": "valid",
+    "last_review_on": "2025-07-06",
+    "expires_on": "2027-07-06",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-18"
+  },
+  {
+    "client_id": "C1155",
+    "kyc_status": "valid",
+    "last_review_on": "2024-09-14",
+    "expires_on": "2026-09-14",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-08-13"
+  },
+  {
+    "client_id": "C1156",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-20",
+    "expires_on": "2026-08-20",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-11-12"
+  },
+  {
+    "client_id": "C1157",
+    "kyc_status": "valid",
+    "last_review_on": "2026-12-10",
+    "expires_on": "2028-12-09",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-02"
+  },
+  {
+    "client_id": "C1158",
+    "kyc_status": "valid",
+    "last_review_on": "2026-01-27",
+    "expires_on": "2028-01-27",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-08-21"
+  },
+  {
+    "client_id": "C1159",
+    "kyc_status": "valid",
+    "last_review_on": "2026-09-24",
+    "expires_on": "2028-09-23",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-01-06"
+  },
+  {
+    "client_id": "C1160",
+    "kyc_status": "valid",
+    "last_review_on": "2025-10-02",
+    "expires_on": "2027-10-02",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-08-19"
+  },
+  {
+    "client_id": "C1161",
+    "kyc_status": "valid",
+    "last_review_on": "2026-04-17",
+    "expires_on": "2028-04-16",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-06-16"
+  },
+  {
+    "client_id": "C1162",
+    "kyc_status": "valid",
+    "last_review_on": "2026-03-04",
+    "expires_on": "2028-03-03",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-09"
+  },
+  {
+    "client_id": "C1163",
+    "kyc_status": "valid",
+    "last_review_on": "2026-11-08",
+    "expires_on": "2028-11-07",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-03-30"
+  },
+  {
+    "client_id": "C1164",
+    "kyc_status": "valid",
+    "last_review_on": "2026-09-10",
+    "expires_on": "2028-09-09",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-10-30"
+  },
+  {
+    "client_id": "C1165",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-20",
+    "expires_on": "2026-08-20",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-07"
+  },
+  {
+    "client_id": "C1166",
+    "kyc_status": "missing",
+    "last_review_on": "2024-12-10",
+    "expires_on": "2026-12-10",
+    "aml_risk_rating": "medium",
+    "missing_documents": [
+      "Source of wealth declaration",
+      "Proof of address"
+    ],
+    "suitability_expires_on": "2027-03-23"
+  },
+  {
+    "client_id": "C1167",
+    "kyc_status": "valid",
+    "last_review_on": "2026-04-30",
+    "expires_on": "2028-04-29",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-01-23"
+  },
+  {
+    "client_id": "C1168",
+    "kyc_status": "valid",
+    "last_review_on": "2024-01-02",
+    "expires_on": "2026-01-01",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-04-01"
+  },
+  {
+    "client_id": "C1169",
+    "kyc_status": "valid",
+    "last_review_on": "2025-09-13",
+    "expires_on": "2027-09-13",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-07-23"
+  },
+  {
+    "client_id": "C1170",
+    "kyc_status": "valid",
+    "last_review_on": "2025-07-10",
+    "expires_on": "2027-07-10",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-08-24"
+  },
+  {
+    "client_id": "C1171",
+    "kyc_status": "valid",
+    "last_review_on": "2026-12-05",
+    "expires_on": "2028-12-04",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-26"
+  },
+  {
+    "client_id": "C1172",
+    "kyc_status": "valid",
+    "last_review_on": "2025-01-08",
+    "expires_on": "2027-01-08",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-22"
+  },
+  {
+    "client_id": "C1173",
+    "kyc_status": "missing",
+    "last_review_on": "2026-03-25",
+    "expires_on": "2028-03-24",
+    "aml_risk_rating": "low",
+    "missing_documents": [
+      "Tax residency self-certification"
+    ],
+    "suitability_expires_on": "2027-12-31"
+  },
+  {
+    "client_id": "C1174",
+    "kyc_status": "valid",
+    "last_review_on": "2025-02-19",
+    "expires_on": "2027-02-19",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-08-03"
+  },
+  {
+    "client_id": "C1175",
+    "kyc_status": "valid",
+    "last_review_on": "2024-07-24",
+    "expires_on": "2026-07-24",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-01-07"
+  },
+  {
+    "client_id": "C1176",
+    "kyc_status": "valid",
+    "last_review_on": "2026-06-28",
+    "expires_on": "2028-06-27",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-08-08"
+  },
+  {
+    "client_id": "C1177",
+    "kyc_status": "valid",
+    "last_review_on": "2025-12-02",
+    "expires_on": "2027-12-02",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-04-09"
+  },
+  {
+    "client_id": "C1178",
+    "kyc_status": "valid",
+    "last_review_on": "2025-06-14",
+    "expires_on": "2027-06-14",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-07-13"
+  },
+  {
+    "client_id": "C1179",
+    "kyc_status": "valid",
+    "last_review_on": "2026-11-23",
+    "expires_on": "2028-11-22",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-03-25"
+  },
+  {
+    "client_id": "C1180",
+    "kyc_status": "valid",
+    "last_review_on": "2024-02-21",
+    "expires_on": "2026-02-20",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-09-24"
+  },
+  {
+    "client_id": "C1181",
+    "kyc_status": "valid",
+    "last_review_on": "2025-01-21",
+    "expires_on": "2027-01-21",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-07-03"
+  },
+  {
+    "client_id": "C1182",
+    "kyc_status": "valid",
+    "last_review_on": "2023-12-31",
+    "expires_on": "2025-12-30",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-07-18"
+  },
+  {
+    "client_id": "C1183",
+    "kyc_status": "valid",
+    "last_review_on": "2026-09-22",
+    "expires_on": "2028-09-21",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-03-29"
+  },
+  {
+    "client_id": "C1184",
+    "kyc_status": "valid",
+    "last_review_on": "2026-06-23",
+    "expires_on": "2028-06-22",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-07-13"
+  },
+  {
+    "client_id": "C1185",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-07",
+    "expires_on": "2026-08-07",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-09-10"
+  },
+  {
+    "client_id": "C1186",
+    "kyc_status": "valid",
+    "last_review_on": "2025-02-11",
+    "expires_on": "2027-02-11",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-07-10"
+  },
+  {
+    "client_id": "C1187",
+    "kyc_status": "missing",
+    "last_review_on": "2026-04-29",
+    "expires_on": "2028-04-28",
+    "aml_risk_rating": "low",
+    "missing_documents": [
+      "Tax residency self-certification",
+      "Proof of address"
+    ],
+    "suitability_expires_on": "2026-08-25"
+  },
+  {
+    "client_id": "C1188",
+    "kyc_status": "valid",
+    "last_review_on": "2024-06-25",
+    "expires_on": "2026-06-25",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-06-18"
+  },
+  {
+    "client_id": "C1189",
+    "kyc_status": "valid",
+    "last_review_on": "2024-04-08",
+    "expires_on": "2026-04-08",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-10-07"
+  },
+  {
+    "client_id": "C1190",
+    "kyc_status": "valid",
+    "last_review_on": "2026-11-04",
+    "expires_on": "2028-11-03",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-09-18"
+  },
+  {
+    "client_id": "C1191",
+    "kyc_status": "valid",
+    "last_review_on": "2025-04-09",
+    "expires_on": "2027-04-09",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-08-21"
+  },
+  {
+    "client_id": "C1192",
+    "kyc_status": "valid",
+    "last_review_on": "2025-01-07",
+    "expires_on": "2027-01-07",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-07-19"
+  },
+  {
+    "client_id": "C1193",
+    "kyc_status": "valid",
+    "last_review_on": "2026-07-29",
+    "expires_on": "2028-07-28",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-07-28"
+  },
+  {
+    "client_id": "C1194",
+    "kyc_status": "valid",
+    "last_review_on": "2026-01-13",
+    "expires_on": "2028-01-13",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-09-05"
+  },
+  {
+    "client_id": "C1195",
+    "kyc_status": "valid",
+    "last_review_on": "2024-06-28",
+    "expires_on": "2026-06-28",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-02-19"
+  },
+  {
+    "client_id": "C1196",
+    "kyc_status": "valid",
+    "last_review_on": "2024-04-07",
+    "expires_on": "2026-04-07",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-09-24"
+  },
+  {
+    "client_id": "C1197",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-13",
+    "expires_on": "2026-08-13",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-04-25"
+  },
+  {
+    "client_id": "C1198",
+    "kyc_status": "valid",
+    "last_review_on": "2025-11-20",
+    "expires_on": "2027-11-20",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-04-21"
+  },
+  {
+    "client_id": "C1199",
+    "kyc_status": "valid",
+    "last_review_on": "2024-10-22",
+    "expires_on": "2026-10-22",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-07-19"
+  },
+  {
+    "client_id": "C1200",
+    "kyc_status": "valid",
+    "last_review_on": "2024-07-26",
+    "expires_on": "2026-07-26",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-03-16"
+  },
+  {
+    "client_id": "C1201",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-29",
+    "expires_on": "2026-08-29",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-01-09"
+  },
+  {
+    "client_id": "C1202",
+    "kyc_status": "valid",
+    "last_review_on": "2024-04-28",
+    "expires_on": "2026-04-28",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-08-22"
+  },
+  {
+    "client_id": "C1203",
+    "kyc_status": "valid",
+    "last_review_on": "2026-11-07",
+    "expires_on": "2028-11-06",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-02"
+  },
+  {
+    "client_id": "C1204",
+    "kyc_status": "valid",
+    "last_review_on": "2024-05-31",
+    "expires_on": "2026-05-31",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-04-27"
+  },
+  {
+    "client_id": "C1205",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-18",
+    "expires_on": "2026-08-18",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-08-28"
+  },
+  {
+    "client_id": "C1206",
+    "kyc_status": "valid",
+    "last_review_on": "2025-10-10",
+    "expires_on": "2027-10-10",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-01-30"
+  },
+  {
+    "client_id": "C1207",
+    "kyc_status": "missing",
+    "last_review_on": "2026-11-07",
+    "expires_on": "2028-11-06",
+    "aml_risk_rating": "medium",
+    "missing_documents": [
+      "Proof of address",
+      "Updated ID copy"
+    ],
+    "suitability_expires_on": "2026-06-30"
+  },
+  {
+    "client_id": "C1208",
+    "kyc_status": "valid",
+    "last_review_on": "2024-03-27",
+    "expires_on": "2026-03-27",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-10-16"
+  },
+  {
+    "client_id": "C1209",
+    "kyc_status": "valid",
+    "last_review_on": "2024-06-30",
+    "expires_on": "2026-06-30",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-12-19"
+  },
+  {
+    "client_id": "C1210",
+    "kyc_status": "valid",
+    "last_review_on": "2026-11-09",
+    "expires_on": "2028-11-08",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-07-08"
+  },
+  {
+    "client_id": "C1211",
+    "kyc_status": "valid",
+    "last_review_on": "2024-10-16",
+    "expires_on": "2026-10-16",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-12"
+  },
+  {
+    "client_id": "C1212",
+    "kyc_status": "valid",
+    "last_review_on": "2024-01-18",
+    "expires_on": "2026-01-17",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-11-30"
+  },
+  {
+    "client_id": "C1213",
+    "kyc_status": "valid",
+    "last_review_on": "2026-10-04",
+    "expires_on": "2028-10-03",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-09-17"
+  },
+  {
+    "client_id": "C1214",
+    "kyc_status": "valid",
+    "last_review_on": "2025-02-28",
+    "expires_on": "2027-02-28",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-05-12"
+  },
+  {
+    "client_id": "C1215",
+    "kyc_status": "valid",
+    "last_review_on": "2026-02-09",
+    "expires_on": "2028-02-09",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-04-22"
+  },
+  {
+    "client_id": "C1216",
+    "kyc_status": "valid",
+    "last_review_on": "2025-06-27",
+    "expires_on": "2027-06-27",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-02-23"
+  },
+  {
+    "client_id": "C1217",
+    "kyc_status": "valid",
+    "last_review_on": "2026-06-08",
+    "expires_on": "2028-06-07",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-11-13"
+  },
+  {
+    "client_id": "C1218",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-11",
+    "expires_on": "2026-08-11",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-07-10"
+  },
+  {
+    "client_id": "C1219",
+    "kyc_status": "valid",
+    "last_review_on": "2024-07-18",
+    "expires_on": "2026-07-18",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-07-12"
+  },
+  {
+    "client_id": "C1220",
+    "kyc_status": "valid",
+    "last_review_on": "2026-10-14",
+    "expires_on": "2028-10-13",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-07-16"
+  },
+  {
+    "client_id": "C1221",
+    "kyc_status": "valid",
+    "last_review_on": "2025-10-22",
+    "expires_on": "2027-10-22",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-08-09"
+  },
+  {
+    "client_id": "C1222",
+    "kyc_status": "valid",
+    "last_review_on": "2026-09-05",
+    "expires_on": "2028-09-04",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-06-01"
+  },
+  {
+    "client_id": "C1223",
+    "kyc_status": "valid",
+    "last_review_on": "2026-11-24",
+    "expires_on": "2028-11-23",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-03-12"
+  },
+  {
+    "client_id": "C1224",
     "kyc_status": "valid",
     "last_review_on": "2024-11-12",
     "expires_on": "2026-11-12",
     "aml_risk_rating": "medium",
     "missing_documents": [],
-    "suitability_expires_on": "2027-04-02"
+    "suitability_expires_on": "2027-02-11"
   },
   {
-    "client_id": "C1038",
+    "client_id": "C1225",
     "kyc_status": "valid",
-    "last_review_on": "2026-02-05",
-    "expires_on": "2028-02-05",
-    "aml_risk_rating": "high",
-    "missing_documents": [],
-    "suitability_expires_on": "2027-11-18"
-  },
-  {
-    "client_id": "C1039",
-    "kyc_status": "valid",
-    "last_review_on": "2025-02-15",
-    "expires_on": "2027-02-15",
+    "last_review_on": "2025-05-08",
+    "expires_on": "2027-05-08",
     "aml_risk_rating": "medium",
     "missing_documents": [],
-    "suitability_expires_on": "2026-07-10"
+    "suitability_expires_on": "2027-04-11"
   },
   {
-    "client_id": "C1040",
+    "client_id": "C1226",
     "kyc_status": "valid",
-    "last_review_on": "2025-01-18",
-    "expires_on": "2027-01-18",
+    "last_review_on": "2024-12-27",
+    "expires_on": "2026-12-27",
     "aml_risk_rating": "medium",
     "missing_documents": [],
-    "suitability_expires_on": "2028-01-02"
+    "suitability_expires_on": "2028-01-29"
   },
   {
-    "client_id": "C1041",
+    "client_id": "C1227",
     "kyc_status": "valid",
-    "last_review_on": "2025-10-02",
-    "expires_on": "2027-10-02",
+    "last_review_on": "2024-05-05",
+    "expires_on": "2026-05-05",
     "aml_risk_rating": "low",
     "missing_documents": [],
-    "suitability_expires_on": "2028-09-09"
+    "suitability_expires_on": "2027-10-04"
   },
   {
-    "client_id": "C1042",
+    "client_id": "C1228",
+    "kyc_status": "valid",
+    "last_review_on": "2026-10-01",
+    "expires_on": "2028-09-30",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-08-11"
+  },
+  {
+    "client_id": "C1229",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-11",
+    "expires_on": "2026-08-11",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-21"
+  },
+  {
+    "client_id": "C1230",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-12",
+    "expires_on": "2026-08-12",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-12-14"
+  },
+  {
+    "client_id": "C1231",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-15",
+    "expires_on": "2026-08-15",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-08-23"
+  },
+  {
+    "client_id": "C1232",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-01",
+    "expires_on": "2026-08-01",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-04-15"
+  },
+  {
+    "client_id": "C1233",
+    "kyc_status": "valid",
+    "last_review_on": "2025-08-31",
+    "expires_on": "2027-08-31",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-05-07"
+  },
+  {
+    "client_id": "C1234",
+    "kyc_status": "valid",
+    "last_review_on": "2026-01-20",
+    "expires_on": "2028-01-20",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-02-04"
+  },
+  {
+    "client_id": "C1235",
+    "kyc_status": "valid",
+    "last_review_on": "2024-07-27",
+    "expires_on": "2026-07-27",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-11-01"
+  },
+  {
+    "client_id": "C1236",
+    "kyc_status": "missing",
+    "last_review_on": "2024-08-13",
+    "expires_on": "2026-08-13",
+    "aml_risk_rating": "high",
+    "missing_documents": [
+      "Source of wealth declaration",
+      "Tax residency self-certification"
+    ],
+    "suitability_expires_on": "2028-08-12"
+  },
+  {
+    "client_id": "C1237",
+    "kyc_status": "valid",
+    "last_review_on": "2023-12-30",
+    "expires_on": "2025-12-29",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-05-05"
+  },
+  {
+    "client_id": "C1238",
+    "kyc_status": "valid",
+    "last_review_on": "2024-05-22",
+    "expires_on": "2026-05-22",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-03-02"
+  },
+  {
+    "client_id": "C1239",
+    "kyc_status": "valid",
+    "last_review_on": "2025-03-21",
+    "expires_on": "2027-03-21",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-03-25"
+  },
+  {
+    "client_id": "C1240",
+    "kyc_status": "valid",
+    "last_review_on": "2024-09-14",
+    "expires_on": "2026-09-14",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-10-06"
+  },
+  {
+    "client_id": "C1241",
+    "kyc_status": "valid",
+    "last_review_on": "2025-12-16",
+    "expires_on": "2027-12-16",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-08-30"
+  },
+  {
+    "client_id": "C1242",
+    "kyc_status": "valid",
+    "last_review_on": "2025-12-09",
+    "expires_on": "2027-12-09",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-27"
+  },
+  {
+    "client_id": "C1243",
+    "kyc_status": "valid",
+    "last_review_on": "2026-05-27",
+    "expires_on": "2028-05-26",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-07-14"
+  },
+  {
+    "client_id": "C1244",
+    "kyc_status": "valid",
+    "last_review_on": "2025-02-27",
+    "expires_on": "2027-02-27",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-08-28"
+  },
+  {
+    "client_id": "C1245",
+    "kyc_status": "valid",
+    "last_review_on": "2025-12-20",
+    "expires_on": "2027-12-20",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-04-10"
+  },
+  {
+    "client_id": "C1246",
+    "kyc_status": "valid",
+    "last_review_on": "2024-11-12",
+    "expires_on": "2026-11-12",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-02-22"
+  },
+  {
+    "client_id": "C1247",
+    "kyc_status": "valid",
+    "last_review_on": "2026-12-23",
+    "expires_on": "2028-12-22",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-01-20"
+  },
+  {
+    "client_id": "C1248",
+    "kyc_status": "missing",
+    "last_review_on": "2026-06-29",
+    "expires_on": "2028-06-28",
+    "aml_risk_rating": "medium",
+    "missing_documents": [
+      "Proof of address",
+      "Tax residency self-certification"
+    ],
+    "suitability_expires_on": "2028-01-22"
+  },
+  {
+    "client_id": "C1249",
+    "kyc_status": "valid",
+    "last_review_on": "2024-07-22",
+    "expires_on": "2026-07-22",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-10-16"
+  },
+  {
+    "client_id": "C1250",
+    "kyc_status": "valid",
+    "last_review_on": "2025-05-03",
+    "expires_on": "2027-05-03",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-06-21"
+  },
+  {
+    "client_id": "C1251",
+    "kyc_status": "valid",
+    "last_review_on": "2026-07-29",
+    "expires_on": "2028-07-28",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-03-27"
+  },
+  {
+    "client_id": "C1252",
+    "kyc_status": "valid",
+    "last_review_on": "2025-07-11",
+    "expires_on": "2027-07-11",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-06"
+  },
+  {
+    "client_id": "C1253",
+    "kyc_status": "valid",
+    "last_review_on": "2025-06-22",
+    "expires_on": "2027-06-22",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-06-03"
+  },
+  {
+    "client_id": "C1254",
+    "kyc_status": "valid",
+    "last_review_on": "2025-06-26",
+    "expires_on": "2027-06-26",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-06-10"
+  },
+  {
+    "client_id": "C1255",
+    "kyc_status": "valid",
+    "last_review_on": "2025-02-08",
+    "expires_on": "2027-02-08",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-09-21"
+  },
+  {
+    "client_id": "C1256",
+    "kyc_status": "valid",
+    "last_review_on": "2025-07-30",
+    "expires_on": "2027-07-30",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-06-18"
+  },
+  {
+    "client_id": "C1257",
+    "kyc_status": "valid",
+    "last_review_on": "2026-11-14",
+    "expires_on": "2028-11-13",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-07-22"
+  },
+  {
+    "client_id": "C1258",
+    "kyc_status": "valid",
+    "last_review_on": "2026-03-08",
+    "expires_on": "2028-03-07",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-04-08"
+  },
+  {
+    "client_id": "C1259",
+    "kyc_status": "valid",
+    "last_review_on": "2025-04-22",
+    "expires_on": "2027-04-22",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-05-20"
+  },
+  {
+    "client_id": "C1260",
+    "kyc_status": "valid",
+    "last_review_on": "2024-06-07",
+    "expires_on": "2026-06-07",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-07-02"
+  },
+  {
+    "client_id": "C1261",
+    "kyc_status": "valid",
+    "last_review_on": "2025-05-16",
+    "expires_on": "2027-05-16",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-05-10"
+  },
+  {
+    "client_id": "C1262",
+    "kyc_status": "missing",
+    "last_review_on": "2025-03-28",
+    "expires_on": "2027-03-28",
+    "aml_risk_rating": "low",
+    "missing_documents": [
+      "Tax residency self-certification"
+    ],
+    "suitability_expires_on": "2026-10-16"
+  },
+  {
+    "client_id": "C1263",
+    "kyc_status": "valid",
+    "last_review_on": "2024-04-19",
+    "expires_on": "2026-04-19",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-11-12"
+  },
+  {
+    "client_id": "C1264",
+    "kyc_status": "valid",
+    "last_review_on": "2024-04-29",
+    "expires_on": "2026-04-29",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-02-10"
+  },
+  {
+    "client_id": "C1265",
+    "kyc_status": "valid",
+    "last_review_on": "2024-08-19",
+    "expires_on": "2026-08-19",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-06-14"
+  },
+  {
+    "client_id": "C1266",
+    "kyc_status": "valid",
+    "last_review_on": "2025-01-10",
+    "expires_on": "2027-01-10",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-07-05"
+  },
+  {
+    "client_id": "C1267",
+    "kyc_status": "valid",
+    "last_review_on": "2025-10-27",
+    "expires_on": "2027-10-27",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-06-28"
+  },
+  {
+    "client_id": "C1268",
+    "kyc_status": "valid",
+    "last_review_on": "2025-08-07",
+    "expires_on": "2027-08-07",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-08-20"
+  },
+  {
+    "client_id": "C1269",
+    "kyc_status": "valid",
+    "last_review_on": "2025-02-20",
+    "expires_on": "2027-02-20",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-07-11"
+  },
+  {
+    "client_id": "C1270",
+    "kyc_status": "valid",
+    "last_review_on": "2025-01-19",
+    "expires_on": "2027-01-19",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-07-07"
+  },
+  {
+    "client_id": "C1271",
+    "kyc_status": "valid",
+    "last_review_on": "2026-11-03",
+    "expires_on": "2028-11-02",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-05-18"
+  },
+  {
+    "client_id": "C1272",
     "kyc_status": "valid",
     "last_review_on": "2024-08-18",
     "expires_on": "2026-08-18",
-    "aml_risk_rating": "low",
-    "missing_documents": [],
-    "suitability_expires_on": "2027-08-27"
-  },
-  {
-    "client_id": "C1043",
-    "kyc_status": "valid",
-    "last_review_on": "2026-10-15",
-    "expires_on": "2028-10-14",
     "aml_risk_rating": "medium",
     "missing_documents": [],
-    "suitability_expires_on": "2027-10-05"
+    "suitability_expires_on": "2028-04-06"
   },
   {
-    "client_id": "C1044",
+    "client_id": "C1273",
     "kyc_status": "valid",
-    "last_review_on": "2024-04-15",
-    "expires_on": "2026-04-15",
+    "last_review_on": "2025-04-23",
+    "expires_on": "2027-04-23",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-05-16"
+  },
+  {
+    "client_id": "C1274",
+    "kyc_status": "valid",
+    "last_review_on": "2026-04-09",
+    "expires_on": "2028-04-08",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-30"
+  },
+  {
+    "client_id": "C1275",
+    "kyc_status": "valid",
+    "last_review_on": "2026-08-05",
+    "expires_on": "2028-08-04",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-07-09"
+  },
+  {
+    "client_id": "C1276",
+    "kyc_status": "valid",
+    "last_review_on": "2025-04-04",
+    "expires_on": "2027-04-04",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-11-13"
+  },
+  {
+    "client_id": "C1277",
+    "kyc_status": "valid",
+    "last_review_on": "2025-06-30",
+    "expires_on": "2027-06-30",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-10-04"
+  },
+  {
+    "client_id": "C1278",
+    "kyc_status": "valid",
+    "last_review_on": "2024-11-27",
+    "expires_on": "2026-11-27",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-08-06"
+  },
+  {
+    "client_id": "C1279",
+    "kyc_status": "valid",
+    "last_review_on": "2025-04-13",
+    "expires_on": "2027-04-13",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-10-09"
+  },
+  {
+    "client_id": "C1280",
+    "kyc_status": "missing",
+    "last_review_on": "2024-09-08",
+    "expires_on": "2026-09-08",
+    "aml_risk_rating": "medium",
+    "missing_documents": [
+      "Proof of address"
+    ],
+    "suitability_expires_on": "2028-09-14"
+  },
+  {
+    "client_id": "C1281",
+    "kyc_status": "valid",
+    "last_review_on": "2025-02-19",
+    "expires_on": "2027-02-19",
+    "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-17"
+  },
+  {
+    "client_id": "C1282",
+    "kyc_status": "valid",
+    "last_review_on": "2026-05-24",
+    "expires_on": "2028-05-23",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-03-31"
+  },
+  {
+    "client_id": "C1283",
+    "kyc_status": "valid",
+    "last_review_on": "2026-03-16",
+    "expires_on": "2028-03-15",
     "aml_risk_rating": "medium",
     "missing_documents": [],
     "suitability_expires_on": "2028-01-15"
   },
   {
-    "client_id": "C1045",
+    "client_id": "C1284",
     "kyc_status": "valid",
-    "last_review_on": "2024-07-25",
-    "expires_on": "2026-07-25",
+    "last_review_on": "2025-09-24",
+    "expires_on": "2027-09-24",
     "aml_risk_rating": "medium",
     "missing_documents": [],
-    "suitability_expires_on": "2028-07-05"
+    "suitability_expires_on": "2028-08-16"
   },
   {
-    "client_id": "C1046",
+    "client_id": "C1285",
     "kyc_status": "valid",
-    "last_review_on": "2025-12-08",
-    "expires_on": "2027-12-08",
+    "last_review_on": "2024-08-14",
+    "expires_on": "2026-08-14",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-06-22"
+  },
+  {
+    "client_id": "C1286",
+    "kyc_status": "valid",
+    "last_review_on": "2024-07-29",
+    "expires_on": "2026-07-29",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-03-01"
+  },
+  {
+    "client_id": "C1287",
+    "kyc_status": "valid",
+    "last_review_on": "2024-11-09",
+    "expires_on": "2026-11-09",
     "aml_risk_rating": "medium",
     "missing_documents": [],
-    "suitability_expires_on": "2028-06-26"
+    "suitability_expires_on": "2027-07-22"
   },
   {
-    "client_id": "C1047",
-    "kyc_status": "missing",
-    "last_review_on": "2026-08-05",
-    "expires_on": "2028-08-04",
+    "client_id": "C1288",
+    "kyc_status": "valid",
+    "last_review_on": "2026-01-13",
+    "expires_on": "2028-01-13",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-04-06"
+  },
+  {
+    "client_id": "C1289",
+    "kyc_status": "valid",
+    "last_review_on": "2024-07-29",
+    "expires_on": "2026-07-29",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-06-21"
+  },
+  {
+    "client_id": "C1290",
+    "kyc_status": "valid",
+    "last_review_on": "2024-02-14",
+    "expires_on": "2026-02-13",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-09-26"
+  },
+  {
+    "client_id": "C1291",
+    "kyc_status": "valid",
+    "last_review_on": "2025-11-25",
+    "expires_on": "2027-11-25",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-20"
+  },
+  {
+    "client_id": "C1292",
+    "kyc_status": "valid",
+    "last_review_on": "2024-09-11",
+    "expires_on": "2026-09-11",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-12-14"
+  },
+  {
+    "client_id": "C1293",
+    "kyc_status": "valid",
+    "last_review_on": "2025-11-08",
+    "expires_on": "2027-11-08",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2026-12-10"
+  },
+  {
+    "client_id": "C1294",
+    "kyc_status": "valid",
+    "last_review_on": "2026-05-09",
+    "expires_on": "2028-05-08",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-09-10"
+  },
+  {
+    "client_id": "C1295",
+    "kyc_status": "valid",
+    "last_review_on": "2025-05-26",
+    "expires_on": "2027-05-26",
     "aml_risk_rating": "low",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-05"
+  },
+  {
+    "client_id": "C1296",
+    "kyc_status": "valid",
+    "last_review_on": "2026-08-14",
+    "expires_on": "2028-08-13",
+    "aml_risk_rating": "medium",
+    "missing_documents": [],
+    "suitability_expires_on": "2028-01-02"
+  },
+  {
+    "client_id": "C1297",
+    "kyc_status": "missing",
+    "last_review_on": "2026-12-27",
+    "expires_on": "2028-12-26",
+    "aml_risk_rating": "medium",
     "missing_documents": [
       "Tax residency self-certification"
     ],
-    "suitability_expires_on": "2028-06-06"
+    "suitability_expires_on": "2027-01-05"
   },
   {
-    "client_id": "C1048",
+    "client_id": "C1298",
     "kyc_status": "valid",
-    "last_review_on": "2024-07-22",
-    "expires_on": "2026-07-22",
-    "aml_risk_rating": "low",
+    "last_review_on": "2025-08-31",
+    "expires_on": "2027-08-31",
+    "aml_risk_rating": "high",
     "missing_documents": [],
-    "suitability_expires_on": "2027-08-31"
+    "suitability_expires_on": "2027-09-14"
+  },
+  {
+    "client_id": "C1299",
+    "kyc_status": "valid",
+    "last_review_on": "2026-10-08",
+    "expires_on": "2028-10-07",
+    "aml_risk_rating": "high",
+    "missing_documents": [],
+    "suitability_expires_on": "2027-01-06"
+  },
+  {
+    "client_id": "C1300",
+    "kyc_status": "missing",
+    "last_review_on": "2026-05-11",
+    "expires_on": "2028-05-10",
+    "aml_risk_rating": "low",
+    "missing_documents": [
+      "Updated ID copy"
+    ],
+    "suitability_expires_on": "2027-06-04"
   }
 ]

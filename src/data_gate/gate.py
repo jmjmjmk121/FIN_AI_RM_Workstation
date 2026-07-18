@@ -15,12 +15,13 @@ from functools import lru_cache
 from typing import Optional
 
 from .config import Settings, get_settings
-from .models import Client, ClientView, EodPrice, Goal, KycRecord, KycStatus, Permission
+from .models import Client, ClientView, EodPrice, Goal, KycRecord, KycStatus, Permission, ProductRecord
 from .sources.mock_sources import (
     Client360Source,
     GoalLedgerSource,
     KycCrmSource,
     PermissionSource,
+    ProductCatalogSource,
 )
 from .sources.setsmart import EodResult, SetsmartListedProvider
 
@@ -66,6 +67,7 @@ class DataGate:
         self._goals = GoalLedgerSource()
         self._kyc = KycCrmSource()
         self._permissions = PermissionSource()
+        self._products = ProductCatalogSource()
         self.market = SetsmartListedProvider(self.settings)
 
     @property
@@ -111,6 +113,10 @@ class DataGate:
                 return view
         return None
 
+    def products(self) -> list[ProductRecord]:
+        """The governed product catalogue; modules never read fixture files."""
+        return self._products.load()
+
     # ---- permission gate ----------------------------------------------
 
     def contact_decision(self, view: ClientView) -> ContactDecision:
@@ -144,6 +150,7 @@ class DataGate:
                 "goal_ledger": "fixture",
                 "kyc_crm": "fixture",
                 "permission": "fixture",
+                "product_catalog": "fixture",
                 "setsmart_listed_eod": result.source,
             },
             "market": result.meta(),

@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 
-async function get(path) {
-  const response = await fetch(path);
+export async function apiRequest(path, options = {}) {
+  const response = await fetch(path, {
+    ...options,
+    headers: { "Content-Type": "application/json", ...(options.headers || {}) },
+  });
   if (!response.ok) {
     let detail = `Request failed (${response.status})`;
     try {
@@ -15,6 +18,10 @@ async function get(path) {
   return response.json();
 }
 
+export const apiGet = (path) => apiRequest(path);
+export const apiSend = (path, body, method = "POST") =>
+  apiRequest(path, { method, body: JSON.stringify(body) });
+
 /** Fetch on mount and whenever `path` changes. */
 export function useApi(path) {
   const [data, setData] = useState(null);
@@ -26,7 +33,7 @@ export function useApi(path) {
     setLoading(true);
     setError(null);
 
-    get(path)
+    apiGet(path)
       .then((body) => {
         if (!cancelled) setData(body);
       })
@@ -62,3 +69,11 @@ export const fmtDate = (value) =>
 
 export const titleCase = (value) =>
   (value || "").replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+
+export const friendlyCalcId = (value, suppliedDisplay) => {
+  if (suppliedDisplay) return suppliedDisplay;
+  if (!value) return "—";
+  if (value.startsWith("CAL-")) return value;
+  const suffix = value.split("_").at(-1).slice(0, 8).toUpperCase();
+  return `CAL-${suffix}`;
+};

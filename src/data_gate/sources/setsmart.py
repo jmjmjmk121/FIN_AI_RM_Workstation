@@ -26,6 +26,7 @@ import logging
 import time
 from dataclasses import dataclass
 from datetime import date, timedelta
+from threading import Lock
 from typing import Any, Optional
 
 import httpx
@@ -103,6 +104,11 @@ class SetsmartListedProvider:
     def __init__(self, settings: Optional[Settings] = None) -> None:
         self.settings = settings or get_settings()
         self._cache: dict[str, tuple[float, EodResult]] = {}
+        # FastAPI executes synchronous endpoints in a thread pool. Without a
+        # single-flight lock, one page load can send several identical live
+        # requests before the first response populates the cache, triggering
+        # a 429 and mixing Live/Fixture badges within the same screen.
+        self._fetch_lock = Lock()
 
     # ---- fixture path -------------------------------------------------
 
@@ -208,38 +214,46 @@ class SetsmartListedProvider:
         cached = self._cache.get(cache_key)
         if cached and (time.monotonic() - cached[0]) * 1000 < self.settings.setsmart_cache_ttl_ms:
             return cached[1]
+        with self._fetch_lock:
+            # Recheck after waiting: another request may have completed the
+            # identical fetch while this request was blocked on the lock.
+            cached = self._cache.get(cache_key)
+            if cached and (time.monotonic() - cached[0]) * 1000 < self.settings.setsmart_cache_ttl_ms:
+                return cached[1]
 
-        # EOD for the current day is not published until after the close, and
-        # weekends and Thai public holidays have no data at all. Asking only for
-        # `on` would hand the modules an empty market on a Saturday. Walk back to
-        # the most recent published trading day instead, within the stale window.
-        try:
-            rows: list[EodPrice] = []
-            resolved = on
-            for back in range(self.settings.setsmart_stale_after_days + 1):
-                resolved = on - timedelta(days=back)
-                rows = self._fetch_one_day(security_type, resolved, adjusted)
-                if rows:
-                    break
-        except SetsmartError as exc:
-            # Visible degrade: the demo keeps working, the banner tells the truth.
-            logger.warning("SETSMART live unavailable, using fixture: %s", exc)
-            return self._fixture_result(str(exc))
+            # EOD for the current day is not published until after the close,
+            # and weekends/holidays have no data. Walk back only within the
+            # configured stale window.
+            try:
+                rows: list[EodPrice] = []
+                resolved = on
+                for back in range(self.settings.setsmart_stale_after_days + 1):
+                    resolved = on - timedelta(days=back)
+                    rows = self._fetch_one_day(security_type, resolved, adjusted)
+                    if rows:
+                        break
+            except SetsmartError as exc:
+                logger.warning("SETSMART live unavailable, using fixture: %s", exc)
+                result = self._fixture_result(str(exc))
+                self._cache[cache_key] = (time.monotonic(), result)
+                return result
 
-        if not rows:
-            return self._fixture_result(
-                f"no published EOD data in the {self.settings.setsmart_stale_after_days} "
-                f"days to {on.isoformat()}"
+            if not rows:
+                result = self._fixture_result(
+                    f"no published EOD data in the {self.settings.setsmart_stale_after_days} "
+                    f"days to {on.isoformat()}"
+                )
+                self._cache[cache_key] = (time.monotonic(), result)
+                return result
+
+            result = EodResult(
+                rows=rows,
+                source="live",
+                as_of=resolved,
+                lag_days=(on - resolved).days,
             )
-
-        result = EodResult(
-            rows=rows,
-            source="live",
-            as_of=resolved,
-            lag_days=(on - resolved).days,
-        )
-        self._cache[cache_key] = (time.monotonic(), result)
-        return result
+            self._cache[cache_key] = (time.monotonic(), result)
+            return result
 
     def health(self) -> dict[str, Any]:
         """Provider status with no credential material in it."""

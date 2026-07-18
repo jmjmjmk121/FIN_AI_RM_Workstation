@@ -5,6 +5,8 @@ that performs HTTP, so the suite never depends on a key or the network.
 """
 
 from datetime import date
+from concurrent.futures import ThreadPoolExecutor
+import time
 
 import pytest
 
@@ -104,6 +106,42 @@ def test_auth_failure_degrades_to_fixture_with_a_stated_reason(monkeypatch):
     assert result.source == "fixture"
     assert "401" in result.degraded_reason
     assert result.rows, "fixture rows should still be served"
+
+
+def test_failed_live_call_is_cached_during_fallback_ttl(monkeypatch):
+    provider = SetsmartListedProvider(live_settings())
+    calls = 0
+
+    def boom(path, params):
+        nonlocal calls
+        calls += 1
+        raise SetsmartError("authentication rejected by SETSMART (HTTP 401)")
+
+    monkeypatch.setattr(provider, "_live_get", boom)
+    first = provider.eod_by_security_type("CS")
+    second = provider.eod_by_security_type("CS")
+
+    assert first.source == second.source == "fixture"
+    assert calls == 1
+
+
+def test_concurrent_first_load_uses_one_live_request(monkeypatch):
+    provider = SetsmartListedProvider(live_settings())
+    calls = 0
+
+    def slow_success(path, params):
+        nonlocal calls
+        calls += 1
+        time.sleep(0.03)
+        return [row(AS_OF)]
+
+    monkeypatch.setattr(provider, "_live_get", slow_success)
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        results = list(executor.map(lambda _: provider.eod_by_security_type("All"), range(8)))
+
+    assert calls == 1
+    assert all(result is results[0] for result in results)
+    assert all(result.source == "live" for result in results)
 
 
 def test_live_mode_without_a_key_falls_back_to_fixture():

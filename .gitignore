@@ -6,4 +6,5 @@ __pycache__/
 .env.local
 node_modules/
 dist/
+.runtime/
 .DS_Store

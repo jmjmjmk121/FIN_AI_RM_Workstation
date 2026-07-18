@@ -1,6 +1,10 @@
 # RM AI Workstation
 
-An RM workstation that answers four questions: **who needs you today**, **what should you offer them**, **who has gone quiet**, and **whose KYC is about to lapse**.
+An RM workstation organised around one question: **Why this client, why this need, why this solution, and why now?**
+
+The client record is the front door. Dashboard and KYC are operational queues;
+Product is a goal-conditioned decision workspace; portfolio drafts always stay
+separate from current holdings until a human decision.
 
 Built for the five RM problems in [CLAUDE.md](CLAUDE.md): capacity overload, no intelligent prioritisation, product breadth, inactive relationships, and manual KYC tracking.
 
@@ -26,10 +30,10 @@ npm run install:all   # first time only
 npm run dev
 ```
 
-Your `.env` is set to **live** SETSMART market data. Set `SETSMART_LISTED_DATA_MODE=fixture` to run entirely offline with no key — everything else is mock data either way, so the app works fully without credentials.
+The backend reads `.env`/`.env.local` inside this project and, for this supplied nested workspace, uses `CFA_AI/.env.local` as a fallback. SETSMART is used only when live mode and a valid rotated key are both present; rejection or outage produces a visible cached fixture fallback. Everything else remains synthetic/demo data unless an approved bank adapter is connected.
 
 ```bash
-npm run test:py       # 32 tests: gating rules + SETSMART boundary
+npm run test:py       # gates, SETSMART boundary, goal decision and portfolio draft tests
 npm run fixtures      # regenerate the mock data
 ```
 
@@ -45,14 +49,18 @@ python3.11 -m venv .venv
 .venv/bin/pip install fastapi "uvicorn[standard]" pydantic pydantic-settings httpx python-dotenv pytest
 ```
 
-## The four pages
+## Main information architecture
 
 | Page | Module | What it answers |
 |---|---|---|
-| `/attention` | 1 · Attention & Channel | Who to call today, in which lane, and the next best action |
-| `/recommend` | 2 · Product Recommendation | Which products fit a client's goals — and which are gated, and why |
-| `/activity` | 3 · Active Clients | Who has gone quiet and what money is idle while they do |
-| `/kyc` | 4 · KYC & Compliance | Whose KYC blocks advice today, and what to chase |
+| `/clients` | Client book | Search, sort and enter one governed client record |
+| `/clients/:clientId` | Client workspace | Goals, holdings/P&L, grounded AI brief, RM-controlled drafts, activity, KYC and audit context |
+| `/products?clientId=&goalId=` | Goal-conditioned Product | Hard gates, clarification questions, goal impact and Pareto alternatives |
+| `/dashboard` | Active Client Monitor | Deposit/withdraw/trade activity, holding-only state and governed AI Product next steps |
+| `/kyc` | KYC operations | Renewal/document queue that deep-links to the affected client |
+
+Legacy `/attention`, `/recommend`, and `/activity` browser routes redirect to
+the new information architecture.
 
 ## Architecture
 
@@ -70,7 +78,7 @@ The **data gate** ([src/data_gate/gate.py](src/data_gate/gate.py)) is the single
 ```
 src/
   data_gate/      models, config, gate, sources, fixtures
-  modules/        attention, recommendation, activity, kyc
+  modules/        attention, recommendation, activity, kyc, goal_decision, portfolio, ai_assist
   api/            FastAPI service
   frontend/       React + Vite
 tools/            generate_fixtures.py
@@ -81,11 +89,11 @@ tests/            gating rules + SETSMART boundary (all offline)
 
 | Source | Mode | Notes |
 |---|---|---|
-| Client 360 | Fixture | 48 seeded clients, holdings, cash, activity recency |
+| Client 360 | Fixture | 300 seeded clients for RM001, holdings, cash, activity recency |
 | Goal Ledger | Fixture | ~99 goals with funding progress and confirmation flags |
 | KYC / CRM | Fixture | Review dates, AML rating, outstanding documents |
 | Permission / mandate | Fixture | Contact consent, product entitlements |
-| SETSMART listed EOD | **Live** | Real adapter against the published contract — ~3,900 rows/day |
+| SETSMART listed EOD | Live-ready / visible fallback | Real adapter against the published contract; runtime status is reported by `/api/health` |
 
 Mock data is generated with a fixed seed and **exact quotas** rather than probabilistic rolls, so the demo composition is a stated fact, not a lottery. (Rolls bit us: a 15%-probability branch landed on 35% of the book at one seed.) Tune the shape in `make_clients()` in [tools/generate_fixtures.py](tools/generate_fixtures.py):
 
@@ -106,7 +114,7 @@ auth header: api-key
 
 Spec: [Company Fundamental Data API Specification V1.0](https://media.set.or.th/set/Documents/2022/Oct/05_1_Company_Fundamental_Specification.pdf)
 
-**It runs live.** Set in `.env`:
+**To request live mode**, set these values server-side in `.env` or `.env.local`:
 
 ```bash
 SETSMART_LISTED_DATA_MODE=live
@@ -141,7 +149,12 @@ Boundaries the adapter holds:
 | `GET /api/activity?status=` | Module 3 — activity dashboard |
 | `GET /api/kyc?status=` | Module 4 — KYC dashboard |
 | `GET /api/clients`, `/api/clients/{id}` | Client list and detail |
-| `GET /api/products` | Product catalogue |
+| `GET /api/products`, `/api/products/{id}` | Governed demo product catalogue and explicit unsupported fields |
+| `POST /api/goal-decisions` | Goal Contract → hard gates → goal impact → Pareto alternatives |
+| `GET /api/clients/{id}/portfolio` | Current synthetic positions, source lineage and P&L |
+| `GET/POST /api/portfolio-analytics` | Client-scoped deterministic portfolio calculations |
+| `GET/POST /api/portfolio-drafts` | Persistent draft proposals; never mutates current holdings |
+| `GET /api/dashboard` | Book-level queues and deep links |
 | `GET /api/market/eod?security_type=` | SETSMART EOD rows with source metadata |
 
 ## Design decisions worth knowing

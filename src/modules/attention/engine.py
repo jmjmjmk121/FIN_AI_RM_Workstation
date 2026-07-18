@@ -66,6 +66,8 @@ class AttentionItem:
                 "evidence": s.evidence,
             }
 
+        top_code = self.signals[0].code if self.signals else ""
+        thai_title, thai_action = THAI_BY_CODE.get(top_code, (self.headline, self.next_best_action))
         return {
             "client_id": self.client_id,
             "client_name": self.client_name,
@@ -73,7 +75,9 @@ class AttentionItem:
             "lane": self.lane.value,
             "score": round(self.score, 2),
             "headline": self.headline,
+            "headline_th": thai_title,
             "next_best_action": self.next_best_action,
+            "next_best_action_th": thai_action,
             "lane_rationale": self.lane_rationale,
             "contact_allowed": self.contact_allowed,
             "contact_block_reason": self.contact_block_reason,
@@ -101,6 +105,27 @@ ACTION_BY_CODE = {
     "PROTECTION_GAP": "Review protection cover against the confirmed gap",
     "FINANCING_NEED": "Explore financing options for the confirmed need",
     "TAX_EVENT": "Review tax-efficient allocation before the window closes",
+}
+
+THAI_BY_CODE = {
+    "KYC_MISSING": ("ยังไม่มีข้อมูล KYC", "เปิดแฟ้ม KYC และยืนยันข้อมูลก่อนทำคำแนะนำ"),
+    "KYC_OVERDUE": ("KYC หมดอายุ", "ติดต่อลูกค้าเพื่อต่ออายุ KYC ก่อนให้คำแนะนำ"),
+    "KYC_DUE_SOON": ("KYC ใกล้ครบกำหนด", "เตรียมเอกสารต่ออายุและนัดหมายลูกค้า"),
+    "KYC_DOCUMENTS_MISSING": ("เอกสาร KYC ยังไม่ครบ", "ขอเอกสารที่ขาดให้ครบก่อนดำเนินการ"),
+    "SUITABILITY_REVIEW_OVERDUE": ("Suitability หมดอายุ", "ประเมิน Suitability ใหม่ก่อนเสนอผลิตภัณฑ์"),
+    "SUITABILITY_CONFLICT": ("พอร์ตขัดกับกรอบความเสี่ยง", "ทบทวนสินทรัพย์ที่เกินกรอบและจัดทำแผนแก้ไข"),
+    "LIQUIDITY_SHORTFALL": ("เงินสำรองต่ำกว่ากรอบ", "หารือการเติมเงินสำรองก่อนเพิ่มความเสี่ยง"),
+    "SEVERE_CONCENTRATION": ("พอร์ตกระจุกตัวสูง", "เตรียมทางเลือกกระจายความเสี่ยงให้ RM พิจารณา"),
+    "CRITICAL_GOAL_AT_RISK": ("เป้าหมายสำคัญมีความเสี่ยง", "ทบทวนเงินออม ระยะเวลา หรือจำนวนเงินเป้าหมาย"),
+    "VULNERABLE_CLIENT_NEED": ("ลูกค้าต้องได้รับการดูแลเป็นพิเศษ", "ติดต่อด้วยขั้นตอน enhanced care"),
+    "UNRESOLVED_SERVICE_ISSUE": ("มีเรื่องบริการค้าง", "แก้เรื่องบริการและแจ้งผลลูกค้าก่อนงานขาย"),
+    "EXCESS_LIQUIDITY": ("มีเงินสดเหนือเงินสำรอง", "ยืนยันเป้าหมายก่อนพิจารณานำเงินส่วนเกินไปใช้"),
+    "MATURED_INVESTMENT": ("สินทรัพย์ครบกำหนดแล้ว", "ทบทวนความต้องการก่อนเสนอทางเลือกลงทุนต่อ"),
+    "MATURING_INVESTMENT": ("สินทรัพย์ใกล้ครบกำหนด", "เตรียมทางเลือกก่อนวันครบกำหนด"),
+    "RETIREMENT_PLANNING_NEED": ("ควรทบทวนเป้าหมายเกษียณ", "ยืนยัน Goal Contract และช่องว่างเงินเกษียณ"),
+    "PROTECTION_GAP": ("มีช่องว่างความคุ้มครอง", "ทบทวนความคุ้มครองและส่งต่อผู้เชี่ยวชาญเมื่อจำเป็น"),
+    "FINANCING_NEED": ("มีความต้องการด้านสินเชื่อ", "ยืนยันกระแสเงินสดและส่งต่อผู้เชี่ยวชาญสินเชื่อ"),
+    "TAX_EVENT": ("ใกล้ช่วงวางแผนภาษี", "ทบทวนเป้าหมายและเงื่อนไขก่อนพิจารณาทางเลือก"),
 }
 
 
@@ -211,6 +236,34 @@ def build_attention_list(
 
     items.sort(key=lambda i: -i.score)
     return items[:limit] if limit else items
+
+
+def build_daily_review_queue(
+    items: list[AttentionItem],
+    limit: int,
+    care_limit: int,
+) -> list[AttentionItem]:
+    """Build the bounded candidate set shown to the RM each day.
+
+    The attention engine still evaluates the entire book.  This function only
+    applies workstation capacity after scoring, keeps Care ahead of Growth in
+    the final order, and reserves a visible Growth lane without letting AUM or
+    product value displace the configured Care allocation.
+    """
+    if limit <= 0:
+        return []
+    care = [item for item in items if item.lane == Lane.CARE]
+    growth = [item for item in items if item.lane == Lane.GROWTH]
+    selected = care[: min(care_limit, limit)]
+    selected.extend(growth[: max(0, limit - len(selected))])
+
+    if len(selected) < limit:
+        selected_ids = {item.client_id for item in selected}
+        remainder = [item for item in items if item.client_id not in selected_ids]
+        selected.extend(remainder[: limit - len(selected)])
+
+    selected.sort(key=lambda item: -item.score)
+    return selected
 
 
 def summarise(items: list[AttentionItem]) -> dict:

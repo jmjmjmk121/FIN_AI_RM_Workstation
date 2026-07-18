@@ -20,7 +20,10 @@ FIXTURE_DIR = ROOT / "src" / "data_gate" / "fixtures"
 AS_OF = date(2026, 7, 17)
 SEED = 20260717
 RM_ID = "RM001"
-CLIENT_COUNT = 48
+# Production RMs commonly carry hundreds of relationships.  Keep one full,
+# deterministic 300-client book in the demo so the attention queue is tested at
+# the same order of magnitude as the stated pain point (200–500+ clients/RM).
+CLIENT_COUNT = 300
 
 FIRST_NAMES = [
     "Somchai", "Suchada", "Anong", "Wichai", "Pornthip", "Kittisak", "Malee",
@@ -31,6 +34,7 @@ FIRST_NAMES = [
 LAST_NAMES = [
     "Charoensuk", "Rattanaporn", "Srisawat", "Wongsiri", "Thongchai", "Piyawat",
     "Sae-Lim", "Chaiyaphum", "Ratanakul", "Boonyarat", "Vongsakul", "Intharaphan",
+    "Kanchanapong",
 ]
 SEGMENTS = ["Priority", "Wealth", "Private", "Affluent"]
 RISK_PROFILES = ["conservative", "moderate", "balanced", "growth", "aggressive"]
@@ -270,7 +274,7 @@ def make_clients(rng):
 
         # ---- goals ----------------------------------------------------
         for j, (goal_type, label, priority, base) in enumerate(
-            rng.sample(GOAL_TEMPLATES, rng.randint(1, 3))
+            rng.sample(GOAL_TEMPLATES, rng.randint(2, 4))
         ):
             target = money(rng, base * 0.6, base * 1.6, step=100_000)
             funded_ratio = rng.uniform(0.35, 1.05)

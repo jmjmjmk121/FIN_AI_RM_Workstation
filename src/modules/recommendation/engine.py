@@ -15,12 +15,10 @@ what a suitability decision has to be.
 
 from __future__ import annotations
 
-import json
 from dataclasses import dataclass, field
 from datetime import date
 from typing import Optional
 
-from data_gate.config import FIXTURE_DIR
 from data_gate.gate import DataGate, get_gate
 from data_gate.models import (
     RISK_RANK,
@@ -100,22 +98,21 @@ class ExcludedProduct:
         }
 
 
-def load_catalog() -> list[Product]:
-    path = FIXTURE_DIR / "products.json"
-    rows = json.loads(path.read_text())
+def load_catalog(gate: Optional[DataGate] = None) -> list[Product]:
+    rows = (gate or get_gate()).products()
     return [
         Product(
-            product_id=r["product_id"],
-            name=r["name"],
-            product_type=r["product_type"],
-            risk_level=RiskProfile(r["risk_level"]),
-            goals_addressed=[GoalType(g) for g in r["goals_addressed"]],
-            min_investment=float(r["min_investment"]),
-            liquidity_days=int(r["liquidity_days"]),
-            horizon_years=float(r["horizon_years"]),
-            indicative_return_pct=float(r["indicative_return_pct"]),
-            description=r["description"],
-            features=r.get("features", []),
+            product_id=r.product_id,
+            name=r.name,
+            product_type=r.product_type,
+            risk_level=r.risk_level,
+            goals_addressed=list(r.goals_addressed),
+            min_investment=float(r.min_investment),
+            liquidity_days=int(r.liquidity_days),
+            horizon_years=float(r.horizon_years),
+            indicative_return_pct=float(r.indicative_return_pct),
+            description=r.description,
+            features=list(r.features),
         )
         for r in rows
     ]
@@ -315,7 +312,7 @@ def recommend(
         goals = [g.goal_type for g in view.goals if g.confirmed_with_client]
 
     block = client_level_block(view, gate.as_of)
-    catalog = load_catalog()
+    catalog = load_catalog(gate)
 
     if block:
         # Everything is excluded for one reason. Say it once, loudly.

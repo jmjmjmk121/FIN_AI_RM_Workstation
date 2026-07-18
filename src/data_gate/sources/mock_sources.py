@@ -13,7 +13,7 @@ from typing import TypeVar
 from pydantic import BaseModel
 
 from ..config import FIXTURE_DIR
-from ..models import Client, Goal, KycRecord, Permission
+from ..models import Client, Goal, KycRecord, Permission, ProductRecord
 
 T = TypeVar("T", bound=BaseModel)
 
@@ -60,3 +60,16 @@ class PermissionSource:
 
     def load(self) -> list[Permission]:
         return _load(FIXTURE_DIR / "permissions.json", Permission)
+
+
+class ProductCatalogSource:
+    """Demo bank product catalogue and shelf state.
+
+    Product-decision modules must use this adapter through DataGate instead of
+    opening the fixture directly.
+    """
+
+    name = "demo_product_catalog"
+
+    def load(self) -> list[ProductRecord]:
+        return _load(FIXTURE_DIR / "products.json", ProductRecord)

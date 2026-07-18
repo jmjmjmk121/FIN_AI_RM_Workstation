@@ -22,7 +22,7 @@ from data_gate.models import (
     Permission,
     RiskProfile,
 )
-from modules.attention.engine import build_attention_list, evaluate_client
+from modules.attention.engine import build_attention_list, build_daily_review_queue, evaluate_client
 
 AS_OF = date(2026, 7, 17)
 
@@ -131,6 +131,16 @@ def test_every_care_item_outranks_every_growth_item(gate):
     first_growth = next((n for n, l in enumerate(lanes) if l == Lane.GROWTH), None)
     if first_growth is not None:
         assert Lane.CARE not in lanes[first_growth:]
+
+
+def test_daily_review_queue_is_bounded_and_keeps_care_first(gate):
+    items = build_attention_list(gate=gate)
+    queue = build_daily_review_queue(items, limit=48, care_limit=37)
+    assert len(queue) == 48
+    assert len([item for item in queue if item.lane == Lane.CARE]) == 37
+    assert len([item for item in queue if item.lane == Lane.GROWTH]) == 11
+    first_growth = next(index for index, item in enumerate(queue) if item.lane == Lane.GROWTH)
+    assert all(item.lane == Lane.CARE for item in queue[:first_growth])
 
 
 def test_aum_does_not_influence_score(gate):

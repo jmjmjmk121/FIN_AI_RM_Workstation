@@ -200,3 +200,26 @@ class ClientView(BaseModel):
     goals: list[Goal] = []
     kyc: Optional[KycRecord] = None
     permission: Optional[Permission] = None
+
+
+class ProductRecord(BaseModel):
+    """Normalised demo-bank product record exposed only through the Data Gate.
+
+    The current catalogue is a fixture, not a KKP production shelf. Fields not
+    present in the approved fixture stay explicitly unavailable downstream.
+    """
+
+    product_id: str
+    name: str
+    product_type: str
+    risk_level: RiskProfile
+    goals_addressed: list[GoalType]
+    min_investment: float
+    liquidity_days: int
+    horizon_years: float
+    indicative_return_pct: float
+    description: str
+    features: list[str] = []
+    source: str = "DEMO_PRODUCT_CATALOG"
+    approved_shelf_state: str = "DEMO_APPROVED_SHELF"
+    currency: str = "THB"
